@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import Badges01, { codeSnippet } from './application-ui/elements/badges/Badges01';
 
-const Tab = () => {
+const Tab = ({ previewContent, codeSnippet }) => {
   const [activeTab, setActiveTab] = useState('preview');
 
   return (
@@ -40,7 +39,7 @@ const Tab = () => {
               transition={{ duration: 0.3 }}
               className='border p-4'
             >
-              <Badges01 />
+              {previewContent}
             </motion.div>
           ) : (
             <motion.div

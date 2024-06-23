@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import CmponentOverview from './pages/ComponentOverview';
+import ComponentOverview from './pages/ComponentOverview';
 
 const App = () => {
   return (
@@ -13,15 +13,14 @@ const App = () => {
       transition={{ duration: 0.5 }}
       className='p-4'
     >
-
       <Router>
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/component" element={<CmponentOverview />} />
+          <Route path="/component/:type" element={<ComponentOverview />} />
         </Routes>
       </Router>
-    </motion.div >
+    </motion.div>
   );
 };
 
