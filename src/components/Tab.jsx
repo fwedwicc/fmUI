@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import Badges01, { codeSnippet } from './application-ui/elements/badges/01/Badges01';
+import Badges01, { codeSnippet } from './application-ui/elements/badges/Badges01';
 
 const Tab = () => {
   const [activeTab, setActiveTab] = useState('preview');
