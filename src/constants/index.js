@@ -19,5 +19,12 @@ export const componentData = {
     tabs: [
       { component: Buttons01, codeSnippet: buttonsCodeSnippet, label: 'Button 01' }
     ]
+  },
+  checkbox: {
+    title: 'Checkbox',
+    description: 'Sample checkbox component.',
+    tabs: [
+      { component: Buttons01, codeSnippet: buttonsCodeSnippet, label: 'Button 01' }
+    ]
   }
 };
