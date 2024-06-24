@@ -10,7 +10,7 @@ export const componentData = {
     tabs: [
       { component: Badges01, codeSnippet: badges01CodeSnippet, label: 'Default Badge' },
       { component: Badges02, codeSnippet: badges02CodeSnippet, label: 'Badge 02' },
-      { component: Badges03, codeSnippet: badges03CodeSnippet, label: 'Badge 03' }
+      { component: Badges03, codeSnippet: badges03CodeSnippet, label: 'Badge 03' },
     ]
   },
   button: {
