@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Tab } from '../components';
-import { componentData } from '../components/constants';
+import { componentData } from '../constants';
 import { motion } from 'framer-motion';
 
 const ComponentOverview = () => {

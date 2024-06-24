@@ -1,7 +1,7 @@
-import Badges01, { codeSnippet as badges01CodeSnippet } from '../../components/application-ui/elements/badges/Badges01';
-import Badges02, { codeSnippet as badges02CodeSnippet } from '../../components/application-ui/elements/badges/Badges02';
-import Badges03, { codeSnippet as badges03CodeSnippet } from '../../components/application-ui/elements/badges/Badges03';
-import Buttons01, { codeSnippet as buttonsCodeSnippet } from '../../components/application-ui/elements/buttons/Buttons01';
+import Badges01, { codeSnippet as badges01CodeSnippet } from '../components/application-ui/elements/badges/Badges01';
+import Badges02, { codeSnippet as badges02CodeSnippet } from '../components/application-ui/elements/badges/Badges02';
+import Badges03, { codeSnippet as badges03CodeSnippet } from '../components/application-ui/elements/badges/Badges03';
+import Buttons01, { codeSnippet as buttonsCodeSnippet } from '../components/application-ui/elements/buttons/Buttons01';
 
 export const componentData = {
   badge: {
