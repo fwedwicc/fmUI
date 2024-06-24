@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Navbar } from '../components';
+import { Navbar, Interface } from '../components';
 
 const Home = () => {
   return (
@@ -13,12 +13,16 @@ const Home = () => {
     >
       <Navbar />
       <div className='pt-[4.5rem] px-[0.8rem]'>
-        <div className='bg-white border border-neutral-300/40 p-12 rounded-t-[1rem]'>
-          <h1 className='text-[5rem] leading-none font-black'>fmUI, crafted with Tailwind CSS.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi debitis optio dolores illo suscipit atque exercitationem molestias magnam voluptates aspernatur.</p><br />
-          <Link to={'/component/badge'} className='p-4 border bg-zinc-700 text-white'>Badge components</Link>
-          <Link to={'/component/button'} className='p-4 border bg-zinc-700 text-white'>Button component</Link>
-          <Link to={'/component/checkbox'} className='p-4 border bg-zinc-700 text-white'>Checkbox component</Link>
+        <div className='bg-white border border-neutral-300/40 p-12 rounded-t-[1rem] flex flex-col'>
+          <div>
+            <h1 className='text-[5rem] leading-none font-black'>fmUI, crafted with Tailwind CSS.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi debitis optio dolores illo suscipit atque exercitationem molestias magnam voluptates aspernatur.</p>
+            <Link to={'/component/badge'} className='p-4 inline-block border bg-zinc-700 text-white'>Badge components</Link>
+            <Link to={'/component/button'} className='p-4 inline-block border bg-zinc-700 text-white'>Button component</Link>
+            <Link to={'/component/checkbox'} className='p-4 inline-block border bg-zinc-700 text-white'>Checkbox component</Link>
+          </div>
+          <Interface />
+
         </div>
       </div>
     </motion.div>
@@ -26,3 +30,4 @@ const Home = () => {
 }
 
 export default Home;
+

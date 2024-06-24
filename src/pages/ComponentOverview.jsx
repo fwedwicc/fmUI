@@ -14,6 +14,7 @@ const ComponentOverview = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
+      className='p-8'
     >
       <h1 className='text-[4rem] leading-none font-black'>{title}</h1>
       <p>{description}</p>
