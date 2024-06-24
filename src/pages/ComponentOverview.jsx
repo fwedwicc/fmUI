@@ -15,13 +15,13 @@ const ComponentOverview = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className='text-[5rem] leading-none font-black'>{title}</h1>
+      <h1 className='text-[4rem] leading-none font-black'>{title}</h1>
       <p>{description}</p>
       {
         tabs.map((tab, index) => (
           <div key={index} className='mb-8'>
-            <h2 className='text-[2.5rem] leading-none font-bold'>{tab.label}</h2>
             <Tab
+              label={tab.label}
               previewContent={<tab.component />}
               codeSnippet={tab.codeSnippet}
             />

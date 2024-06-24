@@ -5,7 +5,7 @@ import Buttons01, { codeSnippet as buttonsCodeSnippet } from '../../components/a
 
 export const componentData = {
   badge: {
-    title: 'Badges',
+    title: 'Badge components',
     description: 'Sample badge components.',
     tabs: [
       { component: Badges01, codeSnippet: badges01CodeSnippet, label: 'Default Badge' },
