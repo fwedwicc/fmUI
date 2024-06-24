@@ -9,11 +9,11 @@ const ComponentOverview = () => {
 
   return (
     <div>
-      <h1 className='text-[5rem] leading-none text-gray-600 font-black'>{title}</h1>
-      <p className='text-gray-800'>{description}</p>
+      <h1 className='text-[5rem] leading-none font-black'>{title}</h1>
+      <p>{description}</p>
       {tabs.map((tab, index) => (
         <div key={index} className='mb-8'>
-          <h2 className='text-[2.5rem] leading-none text-gray-600 font-bold'>{tab.label}</h2>
+          <h2 className='text-[2.5rem] leading-none font-bold'>{tab.label}</h2>
           <Tab
             previewContent={<tab.component />}
             codeSnippet={tab.codeSnippet}
