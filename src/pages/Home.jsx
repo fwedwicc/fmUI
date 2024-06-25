@@ -14,15 +14,32 @@ const Home = () => {
       <Navbar />
       <div className='pt-[4.5rem] px-[0.8rem]'>
         <div className='bg-white border border-neutral-300/40 p-12 rounded-t-[1rem] flex flex-col'>
-          <div>
-            <h1 className='text-[5rem] leading-none font-black'>fmUI, crafted with Tailwind CSS.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi debitis optio dolores illo suscipit atque exercitationem molestias magnam voluptates aspernatur.</p>
-            <Link to={'/component/badge'} className='p-4 inline-block border bg-zinc-700 text-white'>Badge components</Link>
-            <Link to={'/component/button'} className='p-4 inline-block border bg-zinc-700 text-white'>Button component</Link>
-            <Link to={'/component/checkbox'} className='p-4 inline-block border bg-zinc-700 text-white'>Checkbox component</Link>
+          <div className='grid grid-cols-1 lg:grid-cols-2'>
+            <div className='col-span-1 space-y-6'>
+              <div className='space-y-3'>
+                <h1 className='text-[5rem] leading-none font-black'>fmUI, crafted with Tailwind CSS.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi debitis optio dolores illo suscipit atque exercitationem molestias magnam voluptates aspernatur.</p>
+              </div>
+              <div className='space-x-3'>
+                <button className='px-4 py-2.5 text-zinc-100 hover:bg-neutral-900/90 transition duration-300 ease-in-out bg-neutral-700 font-medium rounded-md'>Explore components</button>
+                <button className='px-4 py-2.5 transition duration-300 ease-in-out text-zinc-600 bg-neutral-200 hover:bg-neutral-400/40 font-medium rounded-md'>View on GitHub</button>
+              </div>
+            </div>
+            <div className='col-span-1 grid grid-cols-2 grid-rows-2'>
+              <div className='col-span-1 row-span-1 border flex flex-col justify-center items-center'>
+                <h1 className='text-[5rem] leading-none font-black'>50+</h1>
+                <span>Total Components</span>
+              </div>
+              <div className='col-span-1 row-span-1 border flex flex-col justify-center items-center'>
+                <h1 className='text-[5rem] leading-none font-black'>20+</h1>
+                <span>Sample Pages</span>
+              </div>
+              <div className='col-span-2 row-span-1 border flex justify-center items-center'>
+                <h1 className='text-[3rem] leading-none font-black'>All are Freemium</h1>
+              </div>
+            </div>
           </div>
           <Interface />
-
         </div>
       </div>
     </motion.div>
@@ -31,3 +48,6 @@ const Home = () => {
 
 export default Home;
 
+{/* <Link to={'/component/badge'} className='p-4 inline-block border bg-zinc-700 text-white'>Badge components</Link>
+              <Link to={'/component/button'} className='p-4 inline-block border bg-zinc-700 text-white'>Button component</Link>
+              <Link to={'/component/checkbox'} className='p-4 inline-block border bg-zinc-700 text-white'>Checkbox component</Link> */}
