@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaHtml5 } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import { Navbar, Interface } from '../components';
 
@@ -34,8 +36,12 @@ const Home = () => {
                 <h1 className='text-[5rem] leading-none font-black'>20+</h1>
                 <span>Sample Pages</span>
               </div>
-              <div className='col-span-2 row-span-1 border flex justify-center items-center'>
-                <h1 className='text-[3rem] leading-none font-black'>All are Freemium</h1>
+              <div className='col-span-2 row-span-1 border flex flex-col gap-4 justify-center items-center'>
+                <h1 className='text-[2.5rem] leading-none font-black'>All are Freemium</h1>
+                <div className='gap-3 flex'>
+                  <RiTailwindCssFill className='text-zinc-300 h-10 w-auto' />
+                  <FaHtml5 className='text-zinc-300 h-10 w-auto' />
+                </div>
               </div>
             </div>
           </div>

@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
+import VanillaTilt from 'vanilla-tilt';
 
 const Card = () => {
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const cardElement = cardRef.current;
+    VanillaTilt.init(cardElement, {
+      max: 10,
+      speed: 50,
+      glare: true,
+      "max-glare": 0.2,
+    });
+
+    return () => {
+      cardElement.vanillaTilt.destroy();
+    };
+  }, []);
+
   return (
-    <div className='p-4 rounded-md border border-neutral-400/30 space-y-5 shadow-xl'>
+    <div ref={cardRef} className='p-4 rounded-md border border-neutral-400/30 space-y-5 shadow-xl'>
       <div className='w-full h-full'>
         <img src="https://placehold.co/600x300" alt="" className='w-full h-full rounded-md object-cover' />
       </div>
@@ -55,7 +72,7 @@ const Card = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 const Interface = () => {
@@ -74,4 +91,4 @@ const Interface = () => {
   )
 }
 
-export default Interface
+export default Interface;
