@@ -1,22 +1,16 @@
-import React, { useEffect, useRef } from 'react';
-import VanillaTilt from 'vanilla-tilt';
+import React from 'react';
+import useVanillaTilt from '../hooks/useVanillaTilt';
+import { IoIosClose } from "react-icons/io";
+import { TbTransferVertical } from "react-icons/tb";
 
 const Card = () => {
-  const cardRef = useRef(null);
-
-  useEffect(() => {
-    const cardElement = cardRef.current;
-    VanillaTilt.init(cardElement, {
-      max: 10,
-      speed: 50,
-      glare: true,
-      "max-glare": 0.2,
-    });
-
-    return () => {
-      cardElement.vanillaTilt.destroy();
-    };
-  }, []);
+  const tiltOptions = {
+    max: 10,
+    speed: 50,
+    glare: true,
+    "max-glare": 0.2,
+  };
+  const cardRef = useVanillaTilt(tiltOptions);
 
   return (
     <div ref={cardRef} className='p-4 rounded-md border border-neutral-400/30 space-y-5 shadow-xl'>
@@ -75,18 +69,59 @@ const Card = () => {
   );
 }
 
+const Modal = () => {
+  const tiltOptions = {
+    max: 10,
+    speed: 50,
+    glare: true,
+    "max-glare": 0.2,
+  };
+  const cardRef = useVanillaTilt(tiltOptions);
+
+  return (
+    <div ref={cardRef} className='rounded-md border border-neutral-400/30 shadow-xl w-full h-full flex flex-col justify-between p-7'>
+      <div className='flex justify-between items-center'>
+        <div className='flex gap-3'>
+          <TbTransferVertical className='w-7 h-auto' />
+          <h2 className='font-medium text-[1.3rem]'>Transfer Ownership</h2>
+        </div>
+        <button className='w-[2.5rem] h-[2.5rem] flex justify-center items-center transition duration-300 ease-in-out hover:bg-neutral-200/40 rounded-md focus:ring-2 focus:ring-neutral-200'>
+          <IoIosClose className='w-6 h-auto' />
+        </button>
+      </div>
+      <div className='gap-4 flex flex-col flex-1 justify-center'>
+        <span>Are you sure you want to transfer the ownership of this organization to asdf? asdfasdf will become the bla bla?</span>
+        {/* <label className='flex items-center gap-3'>
+      <input
+        type="checkbox"
+        className="h-5 w-5 text-neutral-800"
+      />
+      <span>Some message here for confirmation checkbox?</span>
+    </label> */}
+      </div>
+      <div className='flex gap-3 justify-end'>
+        <button className='px-4 py-2.5 transition duration-300 ease-in-out text-zinc-600 bg-neutral-200 border border-neutral-300 hover:bg-neutral-400/40 font-medium rounded-md focus:border-none focus:ring-2 focus:ring-neutral-400/70'>Cancel</button>
+        <button className='px-4 py-2.5 text-zinc-100 hover:bg-neutral-900/90 transition duration-300 ease-in-out bg-neutral-700 border border-neutral-900 font-medium rounded-md focus:border-none focus:ring-2 focus:ring-neutral-400'>Transfer</button>
+      </div>
+    </div>
+
+  )
+}
+
 const Interface = () => {
   return (
     <div className='grid grid-cols-3 grid-rows-4 mt-12'>
       <div className='col-span-1 row-span-2 pr-2.5 pb-2.5'>
         <Card />
       </div>
-      <div className='col-span-1 border border-green-400'>test 2</div>
-      <div className='col-span-1 row-span-3 border border-indigo-400'>test 3</div>
-      <div className='col-span-1 row-span-2 border border-rose-400'>test 4</div>
-      <div className='col-span-1 border border-rose-400 row-span-1'>test 5</div>
-      <div className='col-span-1 border border-rose-400 row-span-1'>test 6</div>
-      <div className='col-span-2 border border-rose-400 row-span-1'>test 7</div>
+      <div className='col-span-1 pb-2.5 px-2.5 border-l border-b'>
+        <Modal />
+      </div>
+      <div className='col-span-1 row-span-3 border'>test 3</div>
+      <div className='col-span-1 row-span-2 border-l p-2.5'>test 4</div>
+      <div className='col-span-1 border row-span-1'>test 5</div>
+      <div className='col-span-1 border row-span-1'>test 6</div>
+      <div className='col-span-2 border row-span-1'>test 7</div>
     </div>
   )
 }
