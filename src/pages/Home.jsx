@@ -21,8 +21,8 @@ const Home = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi debitis optio dolores illo suscipit atque exercitationem molestias magnam voluptates aspernatur.</p>
               </div>
               <div className='space-x-3'>
-                <button className='px-4 py-2.5 text-zinc-100 hover:bg-neutral-900/90 transition duration-300 ease-in-out bg-neutral-700 font-medium rounded-md'>Explore components</button>
-                <button className='px-4 py-2.5 transition duration-300 ease-in-out text-zinc-600 bg-neutral-200 hover:bg-neutral-400/40 font-medium rounded-md'>View on GitHub</button>
+                <button className='px-4 py-2.5 text-zinc-100 hover:bg-neutral-900/90 transition duration-300 ease-in-out bg-neutral-700 border border-neutral-900 font-medium rounded-md'>Explore components</button>
+                <button className='px-4 py-2.5 transition duration-300 ease-in-out text-zinc-600 bg-neutral-200 border border-neutral-300 hover:bg-neutral-400/40 font-medium rounded-md'>View on GitHub</button>
               </div>
             </div>
             <div className='col-span-1 grid grid-cols-2 grid-rows-2'>
