@@ -2,6 +2,7 @@ import React from 'react';
 import useVanillaTilt from '../hooks/useVanillaTilt';
 import { IoIosClose } from "react-icons/io";
 import { TbTransferVertical } from "react-icons/tb";
+import { HiThumbUp, HiCamera, HiMicrophone, HiPhotograph, HiPlusCircle, HiEmojiHappy, HiArrowSmLeft, HiVideoCamera, HiPhone, HiInformationCircle } from "react-icons/hi";
 
 const Card = () => {
   const tiltOptions = {
@@ -121,13 +122,32 @@ const Chat = () => {
     max: 3,
     speed: 50,
     glare: true,
-    "max-glare": 0.3,
+    "max-glare": 0.2,
   };
   const cardRef = useVanillaTilt(tiltOptions);
   return (
     <div ref={cardRef} className='w-full h-full rounded-md border border-neutral-400/30 shadow-xl flex flex-col justify-between'>
-      <div className='w-full p-7 border-b'>
-        Sample Chat
+      <div className='w-full p-7 border-b flex justify-between'>
+        <div className='flex gap-2'>
+          <button className='h-full p-2 rounded-full transition duration-300 ease-in-out hover:bg-neutral-200/40 focus:ring-2 focus:ring-neutral-200'>
+            <HiArrowSmLeft className='w-6 h-auto' />
+          </button>
+          <div className='flex items-center gap-3'>
+            <img src="https://placehold.co/20x20" alt="" className='w-8 h-8 rounded-full' />
+            <h3 className='font-semibold text-[1rem] leading-none'>Frederick Moreno</h3>
+          </div>
+        </div>
+        <div className='flex gap-1'>
+          <button className='h-full p-2 rounded-full transition duration-300 ease-in-out hover:bg-neutral-200/40 focus:ring-2 focus:ring-neutral-200'>
+            <HiPhone className='w-6 h-auto' />
+          </button>
+          <button className='h-full p-2 rounded-full transition duration-300 ease-in-out hover:bg-neutral-200/40 focus:ring-2 focus:ring-neutral-200'>
+            <HiVideoCamera className='w-6 h-auto' />
+          </button>
+          <button className='h-full p-2 rounded-full transition duration-300 ease-in-out hover:bg-neutral-200/40 focus:ring-2 focus:ring-neutral-200'>
+            <HiInformationCircle className='w-6 h-auto' />
+          </button>
+        </div>
       </div>
       <div className='w-full flex-1 p-7 flex gap-3 flex-col justify-between'>
         <div className='flex flex-col items-center gap-4'>
@@ -160,21 +180,39 @@ const Chat = () => {
           <div className='flex justify-end ml-36'>
             <div className='flex justify-end flex-col items-end gap-1.5'>
               <p className='py-2 text-sm px-4 bg-neutral-700 text-zinc-100 rounded rounded-l-xl rounded-tr-xl'>Lorem ipsum dolor sit amet.</p>
+              <p className='py-2 text-sm px-4 bg-neutral-700 text-zinc-100 rounded rounded-l-xl rounded-br-xl'>Lorem ipsum dolor.</p>
             </div>
           </div>
           <div className='flex justify-start gap-3 mr-36'>
             <img src="https://placehold.co/20x20" alt="" className='w-8 h-8 rounded-full' />
             <div className='flex justify-start flex-col items-start gap-1.5'>
-              <p className='py-2 text-sm px-4 bg-neutral-200 rounded rounded-r-xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
               <p className='py-2 text-sm px-4 bg-neutral-200 rounded rounded-bl-xl rounded-r-xl'>Hello</p>
             </div>
           </div>
         </div>
       </div>
-      <div className='w-full p-7 flex border-t justify-between items-center'>
-        <button className='border'>s</button>
-        <input type="text" className='h-10 rounded-md w-full bg-neutral-100' />
-        <button className='border'>s</button>
+      <div className='w-full p-3 flex border-t justify-between items-center gap-1'>
+        <button className='h-full px-2 rounded-full transition duration-300 ease-in-out hover:bg-neutral-200/40 focus:ring-2 focus:ring-neutral-200'>
+          <HiPlusCircle className='w-6 h-auto' />
+        </button>
+        <button className='h-full px-2 rounded-full transition duration-300 ease-in-out hover:bg-neutral-200/40 focus:ring-2 focus:ring-neutral-200'>
+          <HiCamera className='w-6 h-auto' />
+        </button>
+        <button className='h-full px-2 rounded-full transition duration-300 ease-in-out hover:bg-neutral-200/40 focus:ring-2 focus:ring-neutral-200'>
+          <HiPhotograph className='w-6 h-auto' />
+        </button>
+        <button className='h-full px-2 rounded-full transition duration-300 ease-in-out hover:bg-neutral-200/40 focus:ring-2 focus:ring-neutral-200'>
+          <HiMicrophone className='w-6 h-auto' />
+        </button>
+        <div className='relative w-full'>
+          <input type="text" placeholder='Message' className='h-10 pr-10 rounded-md w-full bg-neutral-100 border border-neutral-200 transition duration-300 ease-in-out focus:ring-2 focus:ring-neutral-400 text-sm px-4' />
+          <button className='absolute top-1/2 right-0 transform -translate-y-1/2 h-full px-2 rounded-full'>
+            <HiEmojiHappy className='w-6 h-auto' />
+          </button>
+        </div>
+        <button className='h-full px-2 rounded-full transition duration-300 ease-in-out hover:bg-neutral-200/40 focus:ring-2 focus:ring-neutral-200'>
+          <HiThumbUp className='w-6 h-auto' />
+        </button>
       </div>
     </div>
   )
