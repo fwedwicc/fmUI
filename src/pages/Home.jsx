@@ -28,15 +28,20 @@ const Home = () => {
               </div>
             </div>
             <div className='col-span-1 grid grid-cols-2 grid-rows-2'>
-              <div className='col-span-1 row-span-1 border flex flex-col justify-center items-center'>
-                <h1 className='text-[5rem] leading-none font-black'>50+</h1>
-                <span>Total Components</span>
+              <div className='col-span-1 row-span-1 bg-neutral-200 p-[0.7px]'>
+                <div className='bg-white w-full h-full flex flex-col justify-center items-center'>
+                  <h1 className='text-[5rem] leading-none font-black'>50+</h1>
+                  <span>Total Components</span>
+                </div>
               </div>
-              <div className='col-span-1 row-span-1 border flex flex-col justify-center items-center'>
-                <h1 className='text-[5rem] leading-none font-black'>20+</h1>
-                <span>Sample Pages</span>
+
+              <div className='col-span-1 row-span-1 bg-neutral-200 p-[0.7px]'>
+                <div className='bg-white w-full h-full flex flex-col justify-center items-center'>
+                  <h1 className='text-[5rem] leading-none font-black'>20+</h1>
+                  <span>Sample Pages</span>
+                </div>
               </div>
-              <div className='col-span-2 row-span-1 border flex flex-col gap-4 justify-center items-center'>
+              <div className='col-span-2 row-span-1 flex flex-col gap-4 justify-center items-center'>
                 <h1 className='text-[2.5rem] leading-none font-black'>All are Freemium</h1>
                 <div className='gap-3 flex'>
                   <RiTailwindCssFill className='text-zinc-300 h-10 w-auto' />

@@ -47,7 +47,7 @@ const Card = () => {
       <div className='w-full h-full'>
         <img src="https://placehold.co/600x300" alt="" className='w-full h-full rounded-md object-cover' />
       </div>
-      <div className='space-y-4 px-4 py-4'>
+      <div className='space-y-4 px-4 pt-4'>
         <div className='flex gap-1.5 flex-wrap'>
           {tags.map((tag, index) => (
             <span key={index} className="whitespace-nowrap rounded-full border border-neutral-300 bg-neutral-100 px-2.5 py-1.5 text-sm text-zinc-800">
@@ -114,7 +114,6 @@ const Modal = () => {
         <button className='px-4 py-2.5 text-zinc-100 hover:bg-neutral-900/90 transition duration-300 ease-in-out bg-neutral-700 border border-neutral-900 font-medium rounded-md focus:border-none focus:ring-2 focus:ring-neutral-400'>Transfer</button>
       </div>
     </div>
-
   )
 }
 
@@ -260,6 +259,22 @@ const Login = () => {
   );
 };
 
+const SmallComponents = () => {
+  const tiltOptions = {
+    max: 10,
+    speed: 50,
+    glare: true,
+    "max-glare": 0.3,
+  };
+  const cardRef = useVanillaTilt(tiltOptions);
+
+  return (
+    <div ref={cardRef} className='rounded-md border border-neutral-400/30 shadow-xl w-full h-full flex flex-col justify-between p-7'>
+
+    </div>
+  )
+}
+
 
 const Interface = () => {
   return (
@@ -276,7 +291,9 @@ const Interface = () => {
       <div className='col-span-1 row-span-2 p-2.5 border-l border-b'>
         <Login />
       </div>
-      <div className='col-span-1 row-span-1'>test 5</div>
+      <div className='col-span-1 row-span-1 pr-2.5 pt-2.5 pb-2.5 border-t border-b'>
+        <SmallComponents />
+      </div>
       <div className='col-span-1 row-span-1'>test 6</div>
       <div className='col-span-2 row-span-1'>test 7</div>
     </div>
