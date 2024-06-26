@@ -2,11 +2,12 @@ import React from 'react';
 import useVanillaTilt from '../hooks/useVanillaTilt';
 import { IoIosClose } from "react-icons/io";
 import { TbTransferVertical } from "react-icons/tb";
-import { HiThumbUp, HiCamera, HiMicrophone, HiPhotograph, HiPlusCircle, HiEmojiHappy, HiArrowSmLeft, HiVideoCamera, HiPhone, HiInformationCircle } from "react-icons/hi";
+import { HiThumbUp, HiCamera, HiMicrophone, HiPhotograph, HiPlusCircle, HiEmojiHappy, HiArrowSmLeft, HiVideoCamera, HiPhone, HiInformationCircle, HiEyeOff } from "react-icons/hi";
+import { fmUILogo } from '../assets'
 
 const Card = () => {
   const tiltOptions = {
-    max: 10,
+    max: 7,
     speed: 50,
     glare: true,
     "max-glare": 0.3,
@@ -195,6 +196,71 @@ const Chat = () => {
   );
 };
 
+const Login = () => {
+  const tiltOptions = {
+    max: 7,
+    speed: 50,
+    glare: true,
+    'max-glare': 0.3,
+  };
+  const cardRef = useVanillaTilt(tiltOptions);
+
+  const InputField = ({ label, type, placeholder }) => (
+    <div className="flex flex-col gap-2">
+      <span className="text-sm font-medium">{label}</span>
+      <input
+        type={type}
+        placeholder={placeholder}
+        className="h-11 rounded-md w-full bg-neutral-100 border border-neutral-200 transition duration-300 ease-in-out focus:ring-2 focus:ring-neutral-400 text-sm px-4"
+      />
+    </div>
+  );
+
+  return (
+    <div ref={cardRef} className="rounded-md border border-neutral-400/30 shadow-xl w-full h-full p-10 flex flex-col justify-center items-center">
+      <div className="w-full space-y-8">
+        <div className="flex flex-col items-center gap-5">
+          <img src={fmUILogo} alt="fmUI Logo" className="w-16 h-auto" />
+          <div className="flex flex-col gap-1 items-center">
+            <h1 className="text-[1.6rem] leading-none font-bold">Welcome back!</h1>
+            <span className="text-zinc-700 text-sm">Please enter your credentials</span>
+          </div>
+        </div>
+        <div className="flex flex-col gap-6">
+          <InputField label="Email Address" type="email" placeholder="john@email.com" />
+          <div className="flex flex-col gap-2">
+            <span className="text-sm font-medium">Password</span>
+            <div className="relative w-full">
+              <input
+                type="password"
+                placeholder="•••••••••••"
+                className="h-11 pr-10 rounded-md w-full bg-neutral-100 border border-neutral-200 transition duration-300 ease-in-out focus:ring-2 focus:ring-neutral-400 text-sm px-4"
+              />
+              <button className="absolute top-1/2 right-0 transform -translate-y-1/2 h-full px-2 rounded-full">
+                <HiEyeOff className="w-4 h-auto text-neutral-400" />
+              </button>
+            </div>
+            <div className="flex justify-between">
+              <div className="flex items-center">
+                <input id="remember-checkbox" type="checkbox" className="rounded-md accent-neutral-700 cursor-pointer transition duration-300 ease-in-out" />
+                <label htmlFor="remember-checkbox" className="ms-2 text-sm font-medium">Remember password</label>
+              </div>
+              <span className="underline text-sm font-semibold cursor-pointer">Forgot password</span>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-6">
+          <button className="w-full py-2 text-zinc-100 hover:bg-neutral-900/90 transition duration-300 ease-in-out bg-neutral-700 border border-neutral-900 font-medium rounded-md focus:ring-2 focus:ring-neutral-400">
+            Sign in
+          </button>
+          <span className="text-sm text-center">Don't have an account? <span className="ml-1 underline font-semibold cursor-pointer">Request a free trial</span></span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
 const Interface = () => {
   return (
     <div className='grid grid-cols-3 grid-rows-4 mt-12'>
@@ -207,7 +273,9 @@ const Interface = () => {
       <div className='col-span-1 row-span-3 border-l border-b pl-2.5 pb-2.5'>
         <Chat />
       </div>
-      <div className='col-span-1 row-span-2 p-2.5'>test 4</div>
+      <div className='col-span-1 row-span-2 p-2.5 border-l border-b'>
+        <Login />
+      </div>
       <div className='col-span-1 row-span-1'>test 5</div>
       <div className='col-span-1 row-span-1'>test 6</div>
       <div className='col-span-2 row-span-1'>test 7</div>
