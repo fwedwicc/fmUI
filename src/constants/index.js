@@ -1,11 +1,19 @@
-import Badges01, { codeSnippet as badges01CodeSnippet } from '../components/application-ui/elements/badges/Badges01';
-import Badges02, { codeSnippet as badges02CodeSnippet } from '../components/application-ui/elements/badges/Badges02';
-import Badges03, { codeSnippet as badges03CodeSnippet } from '../components/application-ui/elements/badges/Badges03';
-import Buttons01, { codeSnippet as buttonsCodeSnippet } from '../components/application-ui/elements/buttons/Buttons01';
+import {
+  Badges01, badges01CodeSnippet,
+  Badges02, badges02CodeSnippet,
+  Badges03, badges03CodeSnippet,
+} from '../components/application-ui/elements/badges';
+
+import {
+  Buttons01, buttons01CodeSnippet,
+  Buttons02, buttons02CodeSnippet,
+  Buttons03, buttons03CodeSnippet,
+  Buttons04, buttons04CodeSnippet
+} from '../components/application-ui/elements/buttons';
 
 export const componentData = {
   badge: {
-    title: 'Badge components',
+    title: 'Badge Components',
     description: 'Sample badge components.',
     tabs: [
       { component: Badges01, codeSnippet: badges01CodeSnippet, label: 'Default Badge' },
@@ -14,17 +22,20 @@ export const componentData = {
     ]
   },
   button: {
-    title: 'Buttons',
+    title: 'Button Components',
     description: 'Sample button component.',
     tabs: [
-      { component: Buttons01, codeSnippet: buttonsCodeSnippet, label: 'Button 01' }
+      { component: Buttons01, codeSnippet: buttons01CodeSnippet, label: 'Button variants' },
+      { component: Buttons02, codeSnippet: buttons02CodeSnippet, label: 'Rounded buttons' },
+      { component: Buttons03, codeSnippet: buttons03CodeSnippet, label: 'Button with icons' },
+      { component: Buttons04, codeSnippet: buttons04CodeSnippet, label: 'Icon buttons' }
     ]
   },
   checkbox: {
     title: 'Checkbox',
     description: 'Sample checkbox component.',
     tabs: [
-      { component: Buttons01, codeSnippet: buttonsCodeSnippet, label: 'Button 01' }
+      { component: Buttons01, codeSnippet: buttons01CodeSnippet, label: 'Button 01' }
     ]
   }
 };
