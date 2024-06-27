@@ -18,13 +18,13 @@ const SampleLogin = () => {
       <input
         type={type}
         placeholder={placeholder}
-        className="h-11 rounded-md w-full bg-neutral-100 border border-neutral-200 transition duration-300 ease-in-out focus:ring-2 focus:ring-neutral-400 text-sm px-4"
+        className="h-11 rounded-md w-full bg-neutral-100 border border-neutral-200 transition duration-300 ease-in-out focus:ring-1 focus:ring-neutral-500 focus:border-neutral-500 text-sm px-4"
       />
     </div>
   );
 
   return (
-    <div ref={cardRef} className="rounded-md border border-neutral-400/30 shadow-xl w-full h-full p-10 flex flex-col justify-center items-center">
+    <form ref={cardRef} className="rounded-md border border-neutral-400/30 shadow-xl w-full h-full p-10 flex flex-col justify-center items-center">
       <div className="w-full space-y-8">
         <div className="flex flex-col items-center gap-5">
           <img src={fmUILogo} alt="fmUI Logo" className="w-16 h-auto" />
@@ -41,7 +41,7 @@ const SampleLogin = () => {
               <input
                 type="password"
                 placeholder="•••••••••••"
-                className="h-11 pr-10 rounded-md w-full bg-neutral-100 border border-neutral-200 transition duration-300 ease-in-out focus:ring-2 focus:ring-neutral-400 text-sm px-4"
+                className="h-11 pr-10 rounded-md w-full bg-neutral-100 border border-neutral-200 transition duration-300 ease-in-out focus:ring-neutral-500 focus:border-neutral-500 text-sm px-4"
               />
               <button className="absolute top-1/2 right-0 transform -translate-y-1/2 h-full px-2 rounded-full">
                 <HiEyeOff className="w-4 h-auto text-neutral-400" />
@@ -49,7 +49,7 @@ const SampleLogin = () => {
             </div>
             <div className="flex justify-between">
               <div className="flex items-center">
-                <input id="remember-checkbox" type="checkbox" className="rounded-md accent-neutral-700 cursor-pointer transition duration-300 ease-in-out" />
+                <input id="remember-checkbox" type="checkbox" className="rounded bg-neutral-100 border border-neutral-200  focus:ring-neutral-700 focus:ring-1 text-neutral-700 cursor-pointer transition duration-300 ease-in-out" />
                 <label htmlFor="remember-checkbox" className="ms-2 text-sm font-medium">Remember password</label>
               </div>
               <span className="underline text-sm font-semibold cursor-pointer">Forgot password</span>
@@ -63,7 +63,7 @@ const SampleLogin = () => {
           <span className="text-sm text-center">Don't have an account? <span className="ml-1 underline font-semibold cursor-pointer">Request a free trial</span></span>
         </div>
       </div>
-    </div>
+    </form>
   );
 };
 

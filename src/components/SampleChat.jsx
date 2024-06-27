@@ -68,7 +68,7 @@ const SampleChat = () => {
         <IconButton Icon={HiPhotograph} />
         <IconButton Icon={HiMicrophone} />
         <div className="relative w-full">
-          <input type="text" placeholder="Message" className="h-10 pr-10 rounded-md w-full bg-neutral-100 border border-neutral-200 transition duration-300 ease-in-out focus:ring-2 focus:ring-neutral-400 text-sm px-4" />
+          <input type="text" placeholder="Message" className="h-10 pr-10 rounded-md w-full bg-neutral-100 border border-neutral-200 transition duration-300 ease-in-out focus:ring-1 focus:ring-neutral-500 focus:border-neutral-500 text-sm px-4" />
           <button className="absolute top-1/2 right-0 transform -translate-y-1/2 h-full px-2 rounded-full">
             <HiEmojiHappy className="w-6 h-auto" />
           </button>

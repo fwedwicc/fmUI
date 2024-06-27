@@ -1,7 +1,6 @@
 import React from 'react';
 import useVanillaTilt from '../hooks/useVanillaTilt';
 import { IoIosClose } from "react-icons/io";
-import { TbTransferVertical } from "react-icons/tb";
 import { HiTrash, HiShoppingBag } from "react-icons/hi";
 
 const SampleCart = () => {
