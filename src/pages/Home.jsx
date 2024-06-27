@@ -28,25 +28,26 @@ const Home = () => {
               </div>
             </div>
             <div className='col-span-1 grid grid-cols-2 grid-rows-2'>
-              <div className='col-span-1 row-span-1 bg-neutral-200 p-[0.7px]'>
+              <div className='col-span-1 row-span-1 bg-border-gradient-1 p-[0.5px]'>
                 <div className='bg-white w-full h-full flex flex-col justify-center items-center'>
                   <h1 className='text-[5rem] leading-none font-black'>50+</h1>
                   <span>Total Components</span>
                 </div>
               </div>
 
-              <div className='col-span-1 row-span-1 bg-neutral-200 p-[0.7px]'>
+              <div className='col-span-1 row-span-1 bg-border-gradient-2 p-[0.5px]'>
                 <div className='bg-white w-full h-full flex flex-col justify-center items-center'>
                   <h1 className='text-[5rem] leading-none font-black'>20+</h1>
                   <span>Sample Pages</span>
                 </div>
               </div>
-              <div className='col-span-2 row-span-1 flex flex-col gap-4 justify-center items-center'>
-                <h1 className='text-[2.5rem] leading-none font-black'>All are Freemium</h1>
-                <div className='gap-3 flex'>
-                  <RiTailwindCssFill className='text-zinc-300 h-10 w-auto' />
-                  <FaHtml5 className='text-zinc-300 h-10 w-auto' />
-                </div>
+              <div className='col-span-2 row-span-1 bg-border-gradient-3 p-[0.5px]'>
+                <div className='bg-white flex flex-col gap-4 justify-center items-center w-full h-full'>
+                  <h1 className='text-[2.5rem] leading-none font-black'>All are Freemium</h1>
+                  <div className='gap-3 flex'>
+                    <RiTailwindCssFill className='text-zinc-300 h-10 w-auto' />
+                    <FaHtml5 className='text-zinc-300 h-10 w-auto' />
+                  </div></div>
               </div>
             </div>
           </div>
