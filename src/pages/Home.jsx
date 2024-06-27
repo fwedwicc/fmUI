@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaHtml5 } from "react-icons/fa";
 import { motion } from 'framer-motion';
-import { Navbar, Interface } from '../components';
+import { Navbar, SampleCard, SampleCart, SampleChat, SampleFooter, SampleLogin, SampleModal } from '../components';
 
 const Home = () => {
   return (
@@ -51,7 +51,29 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <Interface />
+          <div className='grid grid-cols-3 grid-rows-4 mt-12'>
+            <div className='col-span-1 row-span-2 pr-2.5 pb-2.5'>
+              <SampleCard />
+            </div>
+            <div className='col-span-1 pb-2.5 px-2.5 border-l border-b'>
+              <SampleModal />
+            </div>
+            <div className='col-span-1 row-span-3 border-l border-b pl-2.5 pb-2.5'>
+              <SampleChat />
+            </div>
+            <div className='col-span-1 row-span-2 p-2.5 border-l border-b'>
+              <SampleLogin />
+            </div>
+            <div className='col-span-1 row-span-1 pr-2.5 pt-2.5 pb-2.5 border-t border-b'>
+              <SampleCart />
+            </div>
+            <div className='col-span-1 row-span-1'>
+
+            </div>
+            <div className='col-span-2 row-span-1 border-l pl-2.5 pt-2.5'>
+              <SampleFooter />
+            </div>
+          </div>
         </div>
       </div>
     </motion.div>
