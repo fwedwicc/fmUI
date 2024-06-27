@@ -1,10 +1,6 @@
 import React from 'react';
 import useVanillaTilt from '../hooks/useVanillaTilt';
-import { IoIosClose } from "react-icons/io";
-import { TbTransferVertical } from "react-icons/tb";
-import { HiThumbUp, HiCamera, HiMicrophone, HiPhotograph, HiPlusCircle, HiEmojiHappy, HiArrowSmLeft, HiVideoCamera, HiPhone, HiInformationCircle, HiEyeOff, HiTrash } from "react-icons/hi";
-import { FaApplePay, FaGooglePay } from "react-icons/fa";
-import { RiVisaLine, RiMastercardFill } from "react-icons/ri";
+import { HiEyeOff } from "react-icons/hi";
 import { fmUILogo } from '../assets'
 
 const SampleLogin = () => {

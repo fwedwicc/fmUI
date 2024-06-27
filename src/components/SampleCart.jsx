@@ -2,10 +2,7 @@ import React from 'react';
 import useVanillaTilt from '../hooks/useVanillaTilt';
 import { IoIosClose } from "react-icons/io";
 import { TbTransferVertical } from "react-icons/tb";
-import { HiThumbUp, HiCamera, HiMicrophone, HiPhotograph, HiPlusCircle, HiEmojiHappy, HiArrowSmLeft, HiVideoCamera, HiPhone, HiInformationCircle, HiEyeOff, HiTrash } from "react-icons/hi";
-import { FaApplePay, FaGooglePay } from "react-icons/fa";
-import { RiVisaLine, RiMastercardFill } from "react-icons/ri";
-import { fmUILogo } from '../assets'
+import { HiTrash, HiShoppingBag } from "react-icons/hi";
 
 const SampleCart = () => {
   const tiltOptions = {
@@ -20,7 +17,7 @@ const SampleCart = () => {
     <div ref={cardRef} className='rounded-md border w-full h-full border-neutral-400/30 shadow-xl flex flex-col justify-between p-7'>
       <div className='flex justify-between items-center'>
         <div className='flex gap-3'>
-          <TbTransferVertical className='w-6 h-auto' />
+          <HiShoppingBag className='w-6 h-auto' />
           <h2 className='font-medium text-[1.3rem]'>Shopping Cart</h2>
         </div>
         <button className='w-[2.5rem] h-[2.5rem] flex justify-center items-center transition duration-300 ease-in-out hover:bg-neutral-200/40 rounded-md focus:ring-2 focus:ring-neutral-200'>
