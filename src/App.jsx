@@ -3,8 +3,10 @@ import { motion } from 'framer-motion';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ComponentOverview from './pages/ComponentOverview';
+import useLenisScroll from './hooks/useLenisScroll';
 
 const App = () => {
+  useLenisScroll();
   return (
     <motion.div
       initial={{ opacity: 0 }}
