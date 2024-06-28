@@ -1,7 +1,8 @@
 import React from 'react';
 import { fmUILogo } from '../assets';
 import { Link, useLocation } from 'react-router-dom';
-import { HiChevronRight, HiHome, HiCollection } from "react-icons/hi";
+import { HiChevronRight, HiHome, HiCollection, HiHeart } from "react-icons/hi";
+import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   const location = useLocation();
@@ -16,8 +17,8 @@ const Navbar = () => {
   // Active/inactive span style
   const spanClasses = () => {
     return location.pathname.startsWith('/components/')
-      ? 'inline-flex gap-2 items-center px-2.5 py-1.5 transition duration-300 ease-in-out text-zinc-100 hover:bg-neutral-900/90 border border-neutral-900 bg-neutral-700 font-medium rounded-md text-sm'
-      : 'inline-flex gap-2 items-center px-2.5 py-1.5 transition duration-300 ease-in-out text-zinc-600 bg-neutral-200 border border-neutral-300 hover:bg-neutral-400/40 font-medium rounded-md text-sm';
+      ? 'inline-flex gap-2 items-center px-2.5 py-1.5 text-zinc-100 border border-neutral-900 bg-neutral-700 font-medium rounded-md text-sm'
+      : 'inline-flex gap-2 items-center px-2.5 py-1.5 text-zinc-600 bg-neutral-200 border border-neutral-300 font-medium rounded-md text-sm';
   };
 
   // To get the current path/loc
@@ -30,7 +31,7 @@ const Navbar = () => {
       case '/components/checkbox':
         return 'Checkboxes';
       default:
-        return 'weba';
+        return <HiHeart />;
     }
   };
 
@@ -50,7 +51,12 @@ const Navbar = () => {
         <HiChevronRight />
         <span className={spanClasses()}>{getPageName()}</span>
       </div>
-      <p>Test</p>
+      <header className='flex items-center gap-4'>
+        <span className='text-sm font-bold'>v1.0</span>
+        <a href='https://github.com/fwedwicc/fmUI' target='_blank' rel='noopener noreferrer' className="block p-2 rounded-full transition duration-300 ease-in-out hover:bg-neutral-200 focus:ring-2 focus:ring-neutral-200">
+          <FaGithub className="w-6 h-auto" />
+        </a>
+      </header>
     </div>
   );
 }
