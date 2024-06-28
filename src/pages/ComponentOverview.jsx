@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { Tab } from '../components';
+import { Tab, Navbar } from '../components';
 import { componentData } from '../constants';
 import { motion } from 'framer-motion';
 
@@ -14,23 +14,27 @@ const ComponentOverview = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className='p-8'
     >
-      <h1 className='text-[4rem] leading-none font-black'>{title}</h1>
-      <p>{description}</p>
-      {
-        tabs.map((tab, index) => (
-          <div key={index} className='mb-8'>
-            <Tab
-              label={tab.label}
-              previewContent={<tab.component />}
-              codeSnippet={tab.codeSnippet}
-            />
-          </div>
-        ))
-      }
-      <h1>Footah</h1>
-    </motion.div >
+      <Navbar />
+      <div className='pt-[4.5rem] px-[0.8rem]'>
+        <div className='bg-white border border-neutral-300/40 p-12 rounded-t-[1rem] flex flex-col'>
+          <h1 className='text-[4rem] leading-none font-black'>{title}</h1>
+          <p>{description}</p>
+          {
+            tabs.map((tab, index) => (
+              <div key={index} className='mb-8'>
+                <Tab
+                  label={tab.label}
+                  previewContent={<tab.component />}
+                  codeSnippet={tab.codeSnippet}
+                />
+              </div>
+            ))
+          }
+          <h1>Footah</h1>
+        </div>
+      </div>
+    </motion.div>
   );
 };
 
