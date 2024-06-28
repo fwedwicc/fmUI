@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Components from './pages/Components';
 import ComponentOverview from './pages/ComponentOverview';
 import useLenisScroll from './hooks/useLenisScroll';
 
@@ -18,7 +19,8 @@ const App = () => {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/component/:type" element={<ComponentOverview />} />
+          <Route path="/components" element={<Components />} />
+          <Route path="/ui/:type" element={<ComponentOverview />} />
         </Routes>
       </Router>
     </motion.div>

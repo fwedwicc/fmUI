@@ -82,6 +82,3 @@ const Home = () => {
 
 export default Home;
 
-{/* <Link to={'/component/badge'} className='p-4 inline-block border bg-zinc-700 text-white'>Badge components</Link>
-              <Link to={'/component/button'} className='p-4 inline-block border bg-zinc-700 text-white'>Button component</Link>
-              <Link to={'/component/checkbox'} className='p-4 inline-block border bg-zinc-700 text-white'>Checkbox component</Link> */}
