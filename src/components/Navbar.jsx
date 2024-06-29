@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='fixed flex w-full h-[4.5rem] justify-between items-center px-[4rem] backdrop-blur-md bg-neutral-50/20 z-50'>
+    <div className='fixed flex w-full h-[4.5rem] justify-between items-center px-[4rem] backdrop-blur-md bg-neutral-50/60 z-50'>
       <Link to='/home'>
         <img src={fmUILogo} alt="fmUI Logo" className='w-auto h-7' />
       </Link>

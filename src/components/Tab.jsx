@@ -23,8 +23,8 @@ const Tab = ({ previewContent, codeSnippet, label }) => {
 
   return (
     <>
-      <div className='flex justify-between items-center'>
-        <h2 className='text-[2rem] leading-none font-bold'>{label}</h2>
+      <div className='flex justify-between items-end'>
+        <h2 className='text-[1.5rem] leading-none font-medium'>{label}</h2>
         <div className='space-x-2 flex'>
           <div className='inline-flex p-1.5 border border-neutral-400/40 gap-2 rounded-[0.4rem]'>
             <motion.button
