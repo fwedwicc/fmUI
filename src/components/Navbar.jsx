@@ -9,7 +9,7 @@ const Navbar = () => {
 
   // Active/inactive link styles
   function linkClasses(path) {
-    return location.pathname === path
+    return (location.pathname === path || (path === '/home' && location.pathname === '/'))
       ? 'inline-flex gap-2 items-center px-2.5 py-1.5 transition duration-300 ease-in-out text-zinc-100 hover:bg-neutral-900/90 border border-neutral-900 bg-neutral-700 font-medium rounded-md text-sm'
       : 'inline-flex gap-2 items-center px-2.5 py-1.5 transition duration-300 ease-in-out text-zinc-600 bg-neutral-200 border border-neutral-300 hover:bg-neutral-400/40 font-medium rounded-md text-sm';
   }
@@ -37,9 +37,7 @@ const Navbar = () => {
 
   return (
     <div className='fixed flex w-full h-[4.5rem] justify-between items-center px-[4rem] backdrop-blur-md bg-neutral-50/20 z-50'>
-      <Link to='/home'>
-        <img src={fmUILogo} alt="fmUI Logo" className='w-auto h-7' />
-      </Link>
+      <img src={fmUILogo} alt="fmUI Logo" className='w-auto h-7' />
       <div className='flex gap-1.5 border p-1.5 rounded-lg items-center'>
         <Link className={linkClasses('/home')} to='/home'>
           <HiHome />
@@ -51,7 +49,9 @@ const Navbar = () => {
           Components
         </Link>
         <HiChevronRight />
-        <span className={spanClasses()}>{getPageName()}</span>
+        <span className={spanClasses()}>
+          {getPageName()}
+        </span>
       </div>
       <header className='flex items-center gap-4'>
         <span className='text-sm font-bold'>v1.0</span>

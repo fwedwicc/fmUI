@@ -8,7 +8,8 @@ import {
   Buttons01, buttons01CodeSnippet,
   Buttons02, buttons02CodeSnippet,
   Buttons03, buttons03CodeSnippet,
-  Buttons04, buttons04CodeSnippet
+  Buttons04, buttons04CodeSnippet,
+  Buttons05, buttons05CodeSnippet,
 } from '../components/application-ui/elements/buttons';
 
 export const componentData = {
@@ -28,7 +29,8 @@ export const componentData = {
       { component: Buttons01, codeSnippet: buttons01CodeSnippet, label: 'Button variants' },
       { component: Buttons02, codeSnippet: buttons02CodeSnippet, label: 'Rounded buttons' },
       { component: Buttons03, codeSnippet: buttons03CodeSnippet, label: 'Button with icons' },
-      { component: Buttons04, codeSnippet: buttons04CodeSnippet, label: 'Icon buttons' }
+      { component: Buttons04, codeSnippet: buttons04CodeSnippet, label: 'Icon buttons' },
+      { component: Buttons05, codeSnippet: buttons05CodeSnippet, label: 'Loading buttons' },
     ]
   },
   checkbox: {

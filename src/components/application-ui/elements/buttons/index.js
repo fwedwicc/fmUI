@@ -2,6 +2,8 @@ import Buttons01, { codeSnippet as buttons01CodeSnippet } from "./Buttons01";
 import Buttons02, { codeSnippet as buttons02CodeSnippet } from "./Buttons02";
 import Buttons03, { codeSnippet as buttons03CodeSnippet } from "./Buttons03";
 import Buttons04, { codeSnippet as buttons04CodeSnippet } from "./Buttons04";
+import Buttons05, { codeSnippet as buttons05CodeSnippet } from "./Buttons05";
+
 
 export {
   Buttons01,
@@ -12,4 +14,6 @@ export {
   buttons03CodeSnippet,
   Buttons04,
   buttons04CodeSnippet,
+  Buttons05,
+  buttons05CodeSnippet,
 }
