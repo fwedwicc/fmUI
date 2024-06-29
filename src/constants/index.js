@@ -10,6 +10,8 @@ import {
   Buttons03, buttons03CodeSnippet,
   Buttons04, buttons04CodeSnippet,
   Buttons05, buttons05CodeSnippet,
+  Buttons06, buttons06CodeSnippet,
+  Buttons07, buttons07CodeSnippet,
 } from '../components/application-ui/elements/buttons';
 
 export const componentData = {
@@ -31,6 +33,8 @@ export const componentData = {
       { component: Buttons03, codeSnippet: buttons03CodeSnippet, label: 'Button with icons' },
       { component: Buttons04, codeSnippet: buttons04CodeSnippet, label: 'Icon buttons' },
       { component: Buttons05, codeSnippet: buttons05CodeSnippet, label: 'Loading buttons' },
+      { component: Buttons06, codeSnippet: buttons06CodeSnippet, label: 'Disabled buttons' },
+      { component: Buttons07, codeSnippet: buttons07CodeSnippet, label: 'Button sizes' },
     ]
   },
   checkbox: {
