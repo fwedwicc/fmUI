@@ -1,28 +1,180 @@
-import React from 'react'
+import React from 'react';
 
-export const codeSnippet = `33333<span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Badge</span>
-<span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">Badge</span>
-<span class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Badge</span>
-<span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Badge</span>
-<span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Badge</span>
-<span class="inline-flex items-center rounded-md bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">Badge</span>
-<span class="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">Badge</span>
-<span class="inline-flex items-center rounded-md bg-pink-50 px-2 py-1 text-xs font-medium text-pink-700 ring-1 ring-inset ring-pink-700/10">Badge</span>
+export const codeSnippet = `<!-- Base Badge with leading icon -->
+<span class="inline-flex items-center gap-1.5 rounded-md border border-neutral-300 bg-neutral-100 px-3 py-1.5 text-sm text-zinc-800">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+    <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+  </svg>
+  Base
+</span>
+<!-- Base Badge with trailing icon -->
+<span class="inline-flex items-center gap-1.5 rounded-md border border-neutral-300 bg-neutral-100 px-3 py-1.5 text-sm text-zinc-800">
+  Base
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+    <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+  </svg>
+</span>
+<!-- Green Badge with leading icon -->
+<span class="inline-flex items-center gap-1.5 rounded-md border border-green-300 bg-green-100 px-4 py-1.5 text-sm text-green-800">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+    <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+  </svg>
+  Green
+</span>
+<!-- Green Badge with trailing icon -->
+<span class="inline-flex items-center gap-1.5 rounded-md border border-green-300 bg-green-100 px-4 py-1.5 text-sm text-green-800">
+  Green
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+    <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+  </svg>
+</span>
+<!-- Blue Badge with leading icon -->
+<span class="inline-flex items-center gap-1.5 rounded-md border border-blue-300 bg-blue-100 px-4 py-1.5 text-sm text-blue-800">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+    <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+  </svg>
+  Blue
+</span>
+<!-- Blue Badge with trailing icon -->
+<span class="inline-flex items-center gap-1.5 rounded-md border border-blue-300 bg-blue-100 px-4 py-1.5 text-sm text-blue-800">
+  Blue
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+    <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+  </svg>
+</span>
+<!-- Yellow Badge with leading icon -->
+<span class="inline-flex items-center gap-1.5 rounded-md border border-yellow-300 bg-yellow-100 px-4 py-1.5 text-sm text-yellow-800">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+    <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+  </svg>
+  Yellow
+</span>
+<!-- Yellow Badge with trailing icon -->
+<span class="inline-flex items-center gap-1.5 rounded-md border border-yellow-300 bg-yellow-100 px-4 py-1.5 text-sm text-yellow-800">
+  Yellow
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+    <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+  </svg>
+</span>
+<!-- Red Badge with leading icon -->
+<span class="inline-flex items-center gap-1.5 rounded-md border border-red-300 bg-red-100 px-4 py-1.5 text-sm text-red-800">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+    <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+  </svg>
+  Red
+</span>
+<!-- Red Badge with trailing icon -->
+<span class="inline-flex items-center gap-1.5 rounded-md border border-red-300 bg-red-100 px-4 py-1.5 text-sm text-red-800">
+  Red
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+    <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+  </svg>
+</span>
+<!-- Purple Badge with leading icon -->
+<span class="inline-flex items-center gap-1.5 rounded-md border border-purple-300 bg-purple-100 px-4 py-1.5 text-sm text-purple-800">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+    <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+  </svg>
+  Purple
+</span>
+<!-- Purple Badge with trailing icon -->
+<span class="inline-flex items-center gap-1.5 rounded-md border border-purple-300 bg-purple-100 px-4 py-1.5 text-sm text-purple-800">
+  Purple
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+    <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+  </svg>
+</span>
 `;
 
 const Badges03 = () => {
   return (
-    <div className='space-x-2'>
-      <span className="inline-flex items-center rounded-md bg-gray-50 px-4 py-2.5 text-sm font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Badge</span>
-      <span className="inline-flex items-center rounded-md bg-red-50 px-4 py-2.5 text-sm font-medium text-red-700 ring-1 ring-inset ring-red-600/10">Badge</span>
-      <span className="inline-flex items-center rounded-md bg-yellow-50 px-4 py-2.5 text-sm font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Badge</span>
-      <span className="inline-flex items-center rounded-md bg-green-50 px-4 py-2.5 text-sm font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Badge</span>
-      <span className="inline-flex items-center rounded-md bg-blue-50 px-4 py-2.5 text-sm font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Badge</span>
-      <span className="inline-flex items-center rounded-md bg-indigo-50 px-4 py-2.5 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">Badge</span>
-      <span className="inline-flex items-center rounded-md bg-purple-50 px-4 py-2.5 text-sm font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">Badge</span>
-      <span className="inline-flex items-center rounded-md bg-pink-50 px-4 py-2.5 text-sm font-medium text-pink-700 ring-1 ring-inset ring-pink-700/10">Badge</span>
+    <div className='gap-3 flex justify-center items-center flex-wrap p-6'>
+      {/* Base Badge with leading icon */}
+      <span className="inline-flex gap-1.5 items-center rounded-md px-3 py-1.5 border border-neutral-300 bg-neutral-100  text-sm text-zinc-800">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
+          <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+        </svg>
+        Base
+      </span>
+      {/* Base Badge with trailing icon */}
+      <span className="inline-flex gap-1.5 items-center rounded-md px-3 py-1.5 border border-neutral-300 bg-neutral-100  text-sm text-zinc-800">
+        Base
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
+          <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+        </svg>
+      </span>
+      {/* Green Badge with leading icon */}
+      <span className="inline-flex gap-1.5 items-center rounded-md px-4 py-1.5 border border-green-300 bg-green-100 text-sm text-green-800">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
+          <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+        </svg>
+        Green
+      </span>
+      {/* Green Badge with trailing icon */}
+      <span className="inline-flex gap-1.5 items-center rounded-md px-4 py-1.5 border border-green-300 bg-green-100 text-sm text-green-800">
+        Green
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
+          <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+        </svg>
+      </span>
+      {/* Blue Badge with leading icon */}
+      <span className="inline-flex gap-1.5 items-center rounded-md px-4 py-1.5 border border-blue-300 bg-blue-100 text-sm text-blue-800">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
+          <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+        </svg>
+        Blue
+      </span>
+      {/* Blue Badge with trailing icon */}
+      <span className="inline-flex gap-1.5 items-center rounded-md px-4 py-1.5 border border-blue-300 bg-blue-100 text-sm text-blue-800">
+        Blue
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
+          <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+        </svg>
+      </span>
+      {/* Yellow Badge with leading icon */}
+      <span className="inline-flex gap-1.5 items-center rounded-md px-4 py-1.5 border border-yellow-300 bg-yellow-100 text-sm text-yellow-800">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
+          <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+        </svg>
+        Yellow
+      </span>
+      {/* Yellow Badge with trailing icon */}
+      <span className="inline-flex gap-1.5 items-center rounded-md px-4 py-1.5 border border-yellow-300 bg-yellow-100 text-sm text-yellow-800">
+        Yellow
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
+          <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+        </svg>
+      </span>
+      {/* Red Badge with leading icon */}
+      <span className="inline-flex gap-1.5 items-center rounded-md px-4 py-1.5 border border-red-300 bg-red-100  text-sm text-red-800">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
+          <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+        </svg>
+        Red
+      </span>
+      {/* Red Badge with trailing icon */}
+      <span className="inline-flex gap-1.5 items-center rounded-md px-4 py-1.5 border border-red-300 bg-red-100  text-sm text-red-800">
+        Red
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
+          <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+        </svg>
+      </span>
+      {/* Purple Badge with leading icon */}
+      <span className="inline-flex gap-1.5 items-center rounded-md px-4 py-1.5 border border-purple-300 bg-purple-100 text-sm text-purple-800">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
+          <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+        </svg>
+        Purple
+      </span>
+      {/* Purple Badge with trailing icon */}
+      <span className="inline-flex gap-1.5 items-center rounded-md px-4 py-1.5 border border-purple-300 bg-purple-100 text-sm text-purple-800">
+        Purple
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
+          <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+        </svg>
+      </span>
     </div>
-  )
-}
+  );
+};
 
-export default Badges03
+export default Badges03;

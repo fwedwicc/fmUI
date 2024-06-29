@@ -1,34 +1,34 @@
 import React from 'react';
 
-export const codeSnippet = `<span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Badge</span>
-<span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">Badge</span>
-<span class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Badge</span>
-<span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Badge</span>
-<span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Badge</span>
-<span class="inline-flex items-center rounded-md bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">Badge</span>
-<span class="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">Badge</span>
-<span class="inline-flex items-center rounded-md bg-pink-50 px-2 py-1 text-xs font-medium text-pink-700 ring-1 ring-inset ring-pink-700/10">Badge</span>
+export const codeSnippet = `<!-- Base -->
+<span class="inline-flex items-center rounded-md border border-neutral-300 bg-neutral-100 px-3 py-1.5 text-sm text-zinc-800">Base</span>
+<!-- Green -->
+<span class="inline-flex items-center rounded-md border border-green-300 bg-green-100 px-4 py-1.5 text-sm text-green-800">Green</span>
+<!-- Blue -->
+<span class="inline-flex items-center rounded-md border border-blue-300 bg-blue-100 px-4 py-1.5 text-sm text-blue-800">Blue</span>
+<!-- Yellow -->
+<span class="inline-flex items-center rounded-md border border-yellow-300 bg-yellow-100 px-4 py-1.5 text-sm text-yellow-800">Yellow</span>
+<!-- Red -->
+<span class="inline-flex items-center rounded-md border border-red-300 bg-red-100 px-4 py-1.5 text-sm text-red-800">Red</span>
+<!-- Purple -->
+<span class="inline-flex items-center rounded-md border border-purple-300 bg-purple-100 px-4 py-1.5 text-sm text-purple-800">Purple</span>
 `;
 
 const Badges01 = () => {
   return (
-    <div className='gap-2 flex justify-center items-center flex-wrap'>
+    <div className='gap-3 flex justify-center items-center flex-wrap p-6'>
       {/* Base */}
       <span className="inline-flex items-center rounded-md px-3 py-1.5 border border-neutral-300 bg-neutral-100  text-sm text-zinc-800">Base</span>
+      {/* Green */}
+      <span className="inline-flex items-center rounded-md px-4 py-1.5 border border-green-300 bg-green-100 text-sm text-green-800">Green</span>
+      {/* Blue */}
+      <span className="inline-flex items-center rounded-md px-4 py-1.5 border border-blue-300 bg-blue-100 text-sm text-blue-800">Blue</span>
+      {/* Yellow */}
+      <span className="inline-flex items-center rounded-md px-4 py-1.5 border border-yellow-300 bg-yellow-100 text-sm text-yellow-800">Yellow</span>
       {/* Red */}
       <span className="inline-flex items-center rounded-md px-4 py-1.5 border border-red-300 bg-red-100  text-sm text-red-800">Red</span>
-
-      <span className="inline-flex items-center rounded-md px-4 py-1.5 border border-yellow-300 bg-yellow-100  text-sm text-yellow-800">Badge</span>
-
-      <span className="inline-flex items-center rounded-md bg-green-50 px-4 py-1.5 text-sm font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Badge</span>
-
-      <span className="inline-flex items-center rounded-md bg-blue-50 px-4 py-1.5 text-sm font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Badge</span>
-
-      <span className="inline-flex items-center rounded-md bg-indigo-50 px-4 py-1.5 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">Badge</span>
-
-      <span className="inline-flex items-center rounded-md bg-purple-50 px-4 py-1.5 text-sm font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">Badge</span>
-
-      <span className="inline-flex items-center rounded-md bg-pink-50 px-4 py-1.5 text-sm font-medium text-pink-700 ring-1 ring-inset ring-pink-700/10">Badge</span>
+      {/* Purple */}
+      <span className="inline-flex items-center rounded-md px-4 py-1.5 border border-purple-300 bg-purple-100 text-sm text-purple-800">Purple</span>
     </div>
   );
 };

@@ -21,9 +21,9 @@ export const componentData = {
     title: 'Badge Components',
     description: 'Sample badge components.',
     tabs: [
-      { component: Badges01, codeSnippet: badges01CodeSnippet, label: 'Default Badges' },
-      { component: Badges02, codeSnippet: badges02CodeSnippet, label: 'Badge 02' },
-      { component: Badges03, codeSnippet: badges03CodeSnippet, label: 'Badge 03' },
+      { component: Badges01, codeSnippet: badges01CodeSnippet, label: 'Default badges' },
+      { component: Badges02, codeSnippet: badges02CodeSnippet, label: 'Rounded badges' },
+      { component: Badges03, codeSnippet: badges03CodeSnippet, label: 'Badges with icons' },
     ]
   },
   button: {
