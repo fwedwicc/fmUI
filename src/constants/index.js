@@ -12,6 +12,8 @@ import {
   Buttons05, buttons05CodeSnippet,
   Buttons06, buttons06CodeSnippet,
   Buttons07, buttons07CodeSnippet,
+  Buttons08, buttons08CodeSnippet,
+  Buttons09, buttons09CodeSnippet,
 } from '../components/application-ui/elements/buttons';
 
 export const componentData = {
@@ -35,6 +37,8 @@ export const componentData = {
       { component: Buttons05, codeSnippet: buttons05CodeSnippet, label: 'Loading buttons' },
       { component: Buttons06, codeSnippet: buttons06CodeSnippet, label: 'Disabled buttons' },
       { component: Buttons07, codeSnippet: buttons07CodeSnippet, label: 'Button sizes' },
+      { component: Buttons08, codeSnippet: buttons08CodeSnippet, label: 'Buttons with state colors' },
+      { component: Buttons09, codeSnippet: buttons09CodeSnippet, label: 'Gradient border buttons' },
     ]
   },
   checkbox: {

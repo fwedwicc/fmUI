@@ -5,6 +5,8 @@ import Buttons04, { codeSnippet as buttons04CodeSnippet } from "./Buttons04";
 import Buttons05, { codeSnippet as buttons05CodeSnippet } from "./Buttons05";
 import Buttons06, { codeSnippet as buttons06CodeSnippet } from "./Buttons06";
 import Buttons07, { codeSnippet as buttons07CodeSnippet } from "./Buttons07";
+import Buttons08, { codeSnippet as buttons08CodeSnippet } from "./Buttons08";
+import Buttons09, { codeSnippet as buttons09CodeSnippet } from "./Buttons09";
 
 export {
   Buttons01,
@@ -21,4 +23,8 @@ export {
   buttons06CodeSnippet,
   Buttons07,
   buttons07CodeSnippet,
+  Buttons08,
+  buttons08CodeSnippet,
+  Buttons09,
+  buttons09CodeSnippet,
 }
