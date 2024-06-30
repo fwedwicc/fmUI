@@ -28,7 +28,7 @@ export const componentData = {
   },
   button: {
     title: 'Button Components',
-    description: 'Sample button component.',
+    description: 'Utilize these fmUI button components to clearly present the various actions users can take within your interface, enhancing navigation and interaction by providing intuitive, visually distinct options for different functionalities.',
     tabs: [
       { component: Buttons01, codeSnippet: buttons01CodeSnippet, label: 'Default button variants' },
       { component: Buttons02, codeSnippet: buttons02CodeSnippet, label: 'Rounded buttons' },
