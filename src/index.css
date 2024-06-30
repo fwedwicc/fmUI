@@ -19,3 +19,15 @@ h2 {
   font-weight: 500;
   font-style: normal;
 }
+
+body::-webkit-scrollbar {
+  @apply w-3;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-neutral-400/40 rounded-[3px];
+}
