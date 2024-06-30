@@ -12,7 +12,7 @@ const Home = () => {
     >
       <Navbar />
       <div className='pt-[4.5rem] px-[0.8rem]'>
-        <div className='bg-white border border-neutral-300/40 p-12 rounded-t-[1rem] flex flex-col'>
+        <div className='bg-white border border-neutral-300/40 py-12 px-24 rounded-[1rem] flex flex-col'>
           {/* Rendered Hero */}
           <Hero />
           {/* Interface Overview */}
