@@ -1,3 +1,9 @@
+// Alert Imports
+import {
+  Alert01, alert01CodeSnippet,
+} from '../components/application-ui/elements/alerts';
+
+// Badge Imports
 import {
   Badges01, badges01CodeSnippet,
   Badges02, badges02CodeSnippet,
@@ -7,6 +13,7 @@ import {
   Badges06, badges06CodeSnippet,
 } from '../components/application-ui/elements/badges';
 
+// Button Imports
 import {
   Buttons01, buttons01CodeSnippet,
   Buttons02, buttons02CodeSnippet,
@@ -20,6 +27,16 @@ import {
 } from '../components/application-ui/elements/buttons';
 
 export const elementsData = {
+  // Alert Component Data
+  alert: {
+    cardTitle: "Alert",
+    cardDescription: "Alert inform users about important events.",
+    title: 'Alert Components',
+    description: 'Leverage these fmUI alert components to draw attention to important information or actions within your interface, ensuring users are promptly informed of critical updates, warnings, or confirmations.',
+    tabs: [
+      { component: Alert01, codeSnippet: alert01CodeSnippet, label: 'Default alerts' },
+    ]
+  },
   // Badge Component Data
   badge: {
     cardTitle: "Badge",
