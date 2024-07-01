@@ -21,6 +21,8 @@ import {
 
 export const componentData = {
   badge: {
+    cardTitle: "Badge",
+    cardDescription: "Badge are used to inform the user of the status of specific data.",
     title: 'Badge Components',
     description: 'Utilize these fmUI badge components to effectively highlight and categorize information within your interface, providing visual cues and distinctions that enhance the clarity and organization of content.',
     tabs: [
@@ -33,6 +35,8 @@ export const componentData = {
     ]
   },
   button: {
+    cardTitle: "Button",
+    cardDescription: "Button allows the user take actions or make choieces.",
     title: 'Button Components',
     description: 'Utilize these fmUI button components to clearly present the various actions users can take within your interface, enhancing navigation and interaction by providing intuitive, visually distinct options for different functionalities.',
     tabs: [
@@ -48,6 +52,8 @@ export const componentData = {
     ]
   },
   checkbox: {
+    cardTitle: "Checkbox",
+    cardDescription: "Checkbox are used to select or deselect a value.",
     title: 'Checkbox',
     description: 'Sample checkbox component.',
     tabs: [

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { Navbar, Card } from '../components';
+import { componentData } from '../constants';
 
 const Components = () => {
   return (
@@ -16,48 +17,16 @@ const Components = () => {
           <div className='space-y-10'>
             <div className='space-y-6'>
               <h1 className='text-[2.5rem] leading-none font-semibold'>Elements</h1>
-              <div className='grid lg:grid-cols-3 grid-cols-2 gap-4'>
-                <Card
-                  link={'/components/badge'}
-                  title={'Badge'}
-                  desc={'This is a test'}
-                  numOfComps={2}
-                />
-                <Card
-                  link={'/components/button'}
-                  title={'Button'}
-                  desc={'This is a test'}
-                  numOfComps={7}
-                />
-                <Card
-                  link={'/components/checkbox'}
-                  title={'Checkbox'}
-                  desc={'This is a test'}
-                  numOfComps={2}
-                />
-              </div>
-            </div>
-            <div className='space-y-6'>
-              <h1 className='text-[2.5rem] leading-none font-semibold'>Sample Pages</h1>
-              <div className='grid lg:grid-cols-3 grid-cols-2 gap-4'>
-                <Card
-                  link={'/components/badge'}
-                  title={'Badge'}
-                  desc={'This is a test'}
-                  numOfComps={2}
-                />
-                <Card
-                  link={'/components/button'}
-                  title={'Button'}
-                  desc={'This is a test'}
-                  numOfComps={7}
-                />
-                <Card
-                  link={'/components/checkbox'}
-                  title={'Checkbox'}
-                  desc={'This is a test'}
-                  numOfComps={2}
-                />
+              <div className='grid lg:grid-cols-4 grid-cols-2 gap-4'>
+                {Object.keys(componentData).map(key => (
+                  <Card
+                    key={key}
+                    link={`/components/${key}`}
+                    title={componentData[key].cardTitle}
+                    desc={componentData[key].cardDescription}
+                    numOfComps={componentData[key].tabs.length}
+                  />
+                ))}
               </div>
             </div>
           </div>
