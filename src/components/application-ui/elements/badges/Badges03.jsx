@@ -90,14 +90,14 @@ const Badges03 = () => {
   return (
     <div className='gap-3 flex justify-center items-center flex-wrap p-6'>
       {/* Base Badge with leading icon */}
-      <span className="inline-flex gap-1.5 items-center rounded-md px-3 py-1.5 border border-neutral-300 bg-neutral-100  text-sm text-zinc-800">
+      <span className="inline-flex gap-1.5 items-center rounded-md px-4 py-1.5 border border-neutral-300 bg-neutral-100  text-sm text-zinc-800">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
           <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
         </svg>
         Base
       </span>
       {/* Base Badge with trailing icon */}
-      <span className="inline-flex gap-1.5 items-center rounded-md px-3 py-1.5 border border-neutral-300 bg-neutral-100  text-sm text-zinc-800">
+      <span className="inline-flex gap-1.5 items-center rounded-md px-4 py-1.5 border border-neutral-300 bg-neutral-100  text-sm text-zinc-800">
         Base
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
           <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />

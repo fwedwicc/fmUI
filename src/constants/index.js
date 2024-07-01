@@ -2,6 +2,9 @@ import {
   Badges01, badges01CodeSnippet,
   Badges02, badges02CodeSnippet,
   Badges03, badges03CodeSnippet,
+  Badges04, badges04CodeSnippet,
+  Badges05, badges05CodeSnippet,
+  Badges06, badges06CodeSnippet,
 } from '../components/application-ui/elements/badges';
 
 import {
@@ -19,11 +22,14 @@ import {
 export const componentData = {
   badge: {
     title: 'Badge Components',
-    description: 'Sample badge components.',
+    description: 'Utilize these fmUI badge components to effectively highlight and categorize information within your interface, providing visual cues and distinctions that enhance the clarity and organization of content.',
     tabs: [
       { component: Badges01, codeSnippet: badges01CodeSnippet, label: 'Default badges' },
       { component: Badges02, codeSnippet: badges02CodeSnippet, label: 'Rounded badges' },
       { component: Badges03, codeSnippet: badges03CodeSnippet, label: 'Badges with icons' },
+      { component: Badges04, codeSnippet: badges04CodeSnippet, label: 'Icon badges' },
+      { component: Badges05, codeSnippet: badges05CodeSnippet, label: 'Notication badge' },
+      { component: Badges06, codeSnippet: badges06CodeSnippet, label: 'Buttons with badge' },
     ]
   },
   button: {

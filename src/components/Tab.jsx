@@ -60,7 +60,7 @@ const Tab = ({ previewContent, codeSnippet, label }) => {
             <AnimatePresence>
               {showTooltip && (
                 <motion.div
-                  className='absolute bottom-full mb-2 -left-1/2 transform text-center -translate-x-1/2 bg-neutral-700 text-zinc-200 text-xs font-medium py-1 px-2 rounded'
+                  className='absolute bottom-full mb-2 -left-[23%] transform text-center -translate-x-1/2 bg-neutral-700 text-zinc-200 text-xs font-medium py-1 px-2 rounded'
                   initial={{ opacity: 0, y: -5 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -5 }}
