@@ -38,7 +38,7 @@ export const elementsData = {
     description: 'Leverage these fmUI alert components to draw attention to important information or actions within your interface, ensuring users are promptly informed of critical updates, warnings, or confirmations.',
     tabs: [
       { component: Alert01, codeSnippet: alert01CodeSnippet, label: 'Default alerts' },
-      { component: Alert02, codeSnippet: alert02CodeSnippet, label: 'Default with dismiss button' },
+      { component: Alert02, codeSnippet: alert02CodeSnippet, label: 'Alerts with dismiss button' },
       { component: Alert03, codeSnippet: alert03CodeSnippet, label: 'Alerts with title' },
       { component: Alert04, codeSnippet: alert04CodeSnippet, label: 'Alerts with CTA' },
     ]
