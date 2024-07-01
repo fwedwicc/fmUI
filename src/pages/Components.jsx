@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Navbar from '../components/Navbar';
+import { Navbar, Card } from '../components';
 
 const Components = () => {
   return (
@@ -13,14 +12,56 @@ const Components = () => {
     >
       <Navbar />
       <div className='pt-[4.5rem] px-[0.8rem]'>
-        <div className='bg-white border border-neutral-300/40 p-12 rounded-t-[1rem] flex flex-col'>
-          <div>
-            <Link to={'/components/badge'} className='p-4 inline-block border bg-zinc-700 text-white'>Badge components</Link>
-            <Link to={'/components/button'} className='p-4 inline-block border bg-zinc-700 text-white'>Button component</Link>
-            <Link to={'/components/checkbox'} className='p-4 inline-block border bg-zinc-700 text-white'>Checkbox component</Link>
+        <div className='bg-white border border-neutral-300/40 py-12 px-24 rounded-[1rem] flex flex-col'>
+          <div className='space-y-10'>
+            <div className='space-y-6'>
+              <h1 className='text-[2.5rem] leading-none font-semibold'>Elements</h1>
+              <div className='grid lg:grid-cols-3 grid-cols-2 gap-4'>
+                <Card
+                  link={'/components/badge'}
+                  title={'Badge'}
+                  desc={'This is a test'}
+                  numOfComps={2}
+                />
+                <Card
+                  link={'/components/button'}
+                  title={'Button'}
+                  desc={'This is a test'}
+                  numOfComps={7}
+                />
+                <Card
+                  link={'/components/checkbox'}
+                  title={'Checkbox'}
+                  desc={'This is a test'}
+                  numOfComps={2}
+                />
+              </div>
+            </div>
+            <div className='space-y-6'>
+              <h1 className='text-[2.5rem] leading-none font-semibold'>Sample Pages</h1>
+              <div className='grid lg:grid-cols-3 grid-cols-2 gap-4'>
+                <Card
+                  link={'/components/badge'}
+                  title={'Badge'}
+                  desc={'This is a test'}
+                  numOfComps={2}
+                />
+                <Card
+                  link={'/components/button'}
+                  title={'Button'}
+                  desc={'This is a test'}
+                  numOfComps={7}
+                />
+                <Card
+                  link={'/components/checkbox'}
+                  title={'Checkbox'}
+                  desc={'This is a test'}
+                  numOfComps={2}
+                />
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
     </motion.div>
   );
