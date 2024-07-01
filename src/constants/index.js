@@ -1,6 +1,7 @@
 // Alert Imports
 import {
   Alert01, alert01CodeSnippet,
+  Alert02, alert02CodeSnippet,
 } from '../components/application-ui/elements/alerts';
 
 // Badge Imports
@@ -35,6 +36,7 @@ export const elementsData = {
     description: 'Leverage these fmUI alert components to draw attention to important information or actions within your interface, ensuring users are promptly informed of critical updates, warnings, or confirmations.',
     tabs: [
       { component: Alert01, codeSnippet: alert01CodeSnippet, label: 'Default alerts' },
+      { component: Alert02, codeSnippet: alert02CodeSnippet, label: 'Default with dismiss' },
     ]
   },
   // Badge Component Data

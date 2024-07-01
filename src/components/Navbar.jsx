@@ -30,6 +30,8 @@ const Navbar = () => {
         return 'Buttons';
       case '/components/checkbox':
         return 'Checkboxes';
+      case '/components/alert':
+        return 'Alerts';
       default:
         return <HiHeart />;
     }
