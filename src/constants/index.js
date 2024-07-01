@@ -19,7 +19,8 @@ import {
   Buttons09, buttons09CodeSnippet,
 } from '../components/application-ui/elements/buttons';
 
-export const componentData = {
+export const elementsData = {
+  // Badge Component Data
   badge: {
     cardTitle: "Badge",
     cardDescription: "Badge are used to inform the user of the status of specific data.",
@@ -34,6 +35,7 @@ export const componentData = {
       { component: Badges06, codeSnippet: badges06CodeSnippet, label: 'Buttons with badge' },
     ]
   },
+  // Button Component Data
   button: {
     cardTitle: "Button",
     cardDescription: "Button allows the user take actions or make choieces.",
@@ -51,6 +53,7 @@ export const componentData = {
       { component: Buttons09, codeSnippet: buttons09CodeSnippet, label: 'Gradient border buttons' },
     ]
   },
+  // Checkbox Component Data
   checkbox: {
     cardTitle: "Checkbox",
     cardDescription: "Checkbox are used to select or deselect a value.",
@@ -61,3 +64,17 @@ export const componentData = {
     ]
   }
 };
+
+
+export const templatesData = {
+  // Sign-up form Data
+  checkbox: {
+    cardTitle: "Sign-up form",
+    cardDescription: "Sign-up formare used to select or deselect a value.",
+    title: 'Sign-up form',
+    description: 'Sample Sign-up form component.',
+    tabs: [
+      { component: Buttons01, codeSnippet: buttons01CodeSnippet, label: 'Button 01' }
+    ]
+  }
+}
