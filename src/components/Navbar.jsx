@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { fmUILogo } from '../assets';
 import { Link, useLocation } from 'react-router-dom';
 import { HiChevronRight, HiHome, HiCollection, HiHeart } from "react-icons/hi";
@@ -6,6 +6,27 @@ import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   const location = useLocation();
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        // Scroll down
+        setShowNavbar(false);
+      } else {
+        // Scroll up
+        setShowNavbar(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
 
   // Active/inactive link styles
   function linkClasses(path) {
@@ -38,7 +59,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='fixed flex w-full h-[4.5rem] justify-between items-center px-[7rem] backdrop-blur-md bg-neutral-50/60 z-50'>
+    <div className={`fixed flex w-full h-[4.5rem] justify-between items-center px-[7rem] backdrop-blur-md bg-neutral-50/60 z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
       <Link to='/home'>
         <img src={fmUILogo} alt="fmUI Logo" className='w-auto h-7' />
       </Link>
