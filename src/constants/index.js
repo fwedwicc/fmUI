@@ -34,6 +34,8 @@ import {
   Checkboxes01, checkboxes01CodeSnippet,
   Checkboxes02, checkboxes02CodeSnippet,
   Checkboxes03, checkboxes03CodeSnippet,
+  Checkboxes04, checkboxes04CodeSnippet,
+  Checkboxes05, checkboxes05CodeSnippet,
 } from '../components/application-ui/elements/checkboxes';
 
 export const elementsData = {
@@ -93,6 +95,8 @@ export const elementsData = {
       { component: Checkboxes01, codeSnippet: checkboxes01CodeSnippet, label: 'Checkbox states' },
       { component: Checkboxes02, codeSnippet: checkboxes02CodeSnippet, label: 'Checkboxes with accents' },
       { component: Checkboxes03, codeSnippet: checkboxes03CodeSnippet, label: 'List of checkbox with label' },
+      { component: Checkboxes04, codeSnippet: checkboxes04CodeSnippet, label: 'Grouped checkbox with label and description' },
+      { component: Checkboxes05, codeSnippet: checkboxes05CodeSnippet, label: 'Advanced grouped checkboxes' },
     ]
   }
 };
