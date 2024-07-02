@@ -1,10 +1,20 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaHtml5, FaGithub } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
+import { elementsData, templatesData } from '../constants';
+
+const getTotalTabs = (data) => {
+  return Object.values(data).reduce((total, element) => {
+    return total + element.tabs.length;
+  }, 0);
+};
 
 const Hero = () => {
+  const totalComponents = getTotalTabs(elementsData);
+  const totalTemplates = getTotalTabs(templatesData);
+
   return (
     <div className='grid grid-cols-1 lg:grid-cols-2'>
       <div className='col-span-1 space-y-6'>
@@ -28,15 +38,15 @@ const Hero = () => {
       <div className='col-span-1 grid grid-cols-2 grid-rows-2'>
         <div className='col-span-1 row-span-1 bg-border-gradient-1 p-[0.5px]'>
           <div className='bg-white w-full h-full flex flex-col justify-center items-center'>
-            <h1 className='text-[5rem] leading-none font-black'>50+</h1>
+            <h1 className='text-[5rem] leading-none font-black'>{totalComponents}</h1>
             <span>Total Components</span>
           </div>
         </div>
 
         <div className='col-span-1 row-span-1 bg-border-gradient-2 p-[0.5px]'>
           <div className='bg-white w-full h-full flex flex-col justify-center items-center'>
-            <h1 className='text-[5rem] leading-none font-black'>20+</h1>
-            <span>Sample Pages</span>
+            <h1 className='text-[5rem] leading-none font-black'>{totalTemplates}</h1>
+            <span>Page Templates</span>
           </div>
         </div>
         <div className='col-span-2 row-span-1 bg-border-gradient-3 p-[0.5px]'>
@@ -49,7 +59,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

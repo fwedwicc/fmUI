@@ -17,7 +17,7 @@ const Components = () => {
           <div className='space-y-10'>
             {/* Rendered Elements */}
             <div className='space-y-6'>
-              <h1 className='text-[2.5rem] leading-none font-semibold'>Elements</h1>
+              <h1 className='text-[2.5rem] leading-none font-semibold'>Components</h1>
               <div className='grid lg:grid-cols-4 grid-cols-2 gap-4'>
                 {Object.keys(elementsData).map(key => (
                   <Card
