@@ -38,6 +38,11 @@ import {
   Checkboxes05, checkboxes05CodeSnippet,
 } from '../components/application-ui/elements/checkboxes';
 
+// Toggle Imports
+import {
+  Toggles01, toggles01CodeSnippet,
+} from '../components/application-ui/elements/toggles';
+
 export const elementsData = {
   // Alert Component Data
   alert: {
@@ -90,7 +95,7 @@ export const elementsData = {
     cardTitle: "Checkbox",
     cardDescription: "Checkbox are used to select or deselect a value.",
     title: 'Checkbox Components',
-    description: 'Sample checkbox component.',
+    description: 'Utilize these fmUI checkbox components to allow users to select one or more options from a set, enhancing interactivity and enabling straightforward, multiple-choice selections within your interface.',
     tabs: [
       { component: Checkboxes01, codeSnippet: checkboxes01CodeSnippet, label: 'Checkbox states' },
       { component: Checkboxes02, codeSnippet: checkboxes02CodeSnippet, label: 'Checkboxes with accents' },
@@ -98,7 +103,17 @@ export const elementsData = {
       { component: Checkboxes04, codeSnippet: checkboxes04CodeSnippet, label: 'Grouped checkbox with label and description' },
       { component: Checkboxes05, codeSnippet: checkboxes05CodeSnippet, label: 'Advanced grouped checkboxes' },
     ]
-  }
+  },
+  // Toggle Component Data
+  toggle: {
+    cardTitle: "Toggle",
+    cardDescription: "Toggle is a checkbox that is styled to look like a switch button.",
+    title: 'Toggle Components',
+    description: 'Employ these fmUI toggle components to enable users to switch between two states, providing an intuitive way to control settings and preferences within your interface.',
+    tabs: [
+      { component: Toggles01, codeSnippet: toggles01CodeSnippet, label: 'Toggle states' },
+    ]
+  },
 };
 
 
