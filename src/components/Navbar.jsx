@@ -10,8 +10,8 @@ const Navbar = () => {
   // Active/inactive link styles
   function linkClasses(path) {
     return (location.pathname === path || (path === '/home' && location.pathname === '/'))
-      ? 'inline-flex gap-2 items-center px-2.5 py-1.5 transition duration-300 ease-in-out text-zinc-100 hover:bg-neutral-900/90 border border-neutral-900 bg-neutral-700 font-medium rounded-md text-sm'
-      : 'inline-flex gap-2 items-center px-2.5 py-1.5 transition duration-300 ease-in-out text-zinc-600 bg-neutral-200 border border-neutral-300 hover:bg-neutral-400/40 font-medium rounded-md text-sm';
+      ? 'inline-flex gap-2 items-center px-2.5 py-1.5 active:scale-95 transition duration-300 ease-in-out text-zinc-100 hover:bg-neutral-900/90 border border-neutral-900 bg-neutral-700 font-medium rounded-md text-sm'
+      : 'inline-flex gap-2 items-center px-2.5 py-1.5 active:scale-95 transition duration-300 ease-in-out text-zinc-600 bg-neutral-200 border border-neutral-300 hover:bg-neutral-400/40 font-medium rounded-md text-sm';
   }
 
   // Active/inactive span style
