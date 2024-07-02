@@ -1,18 +1,34 @@
 import React from 'react'
 
-export const codeSnippet = `<span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Badge</span>
-<span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">Badge</span>
-<span class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Badge</span>
-<span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Badge</span>
+export const codeSnippet = `<!-- This component requires the Tailwind CSS Forms plugin to properly style form elements like checkboxes, radio buttons, and input fields. 
+To use this plugin, install it via npm by running 'npm install @tailwindcss/forms'. 
+Then, include the plugin in your Tailwind CSS configuration file (tailwind.config.js) by adding 'require('@tailwindcss/forms')' to the plugins array. -->
+
+<!-- Default State -->
+<div class="flex items-center">
+  <input id="default-state" type="checkbox" class="size-4 cursor-pointer rounded border border-neutral-200 text-neutral-700 transition duration-300 ease-in-out focus:ring-2 focus:ring-neutral-700" />
+  <label for="default-state" class="ms-3 text-sm font-medium text-neutral-900">Default state</label>
+</div>
+<!-- Checked State -->
+<div class="flex items-center">
+  <input id="checked-state" type="checkbox" class="size-4 cursor-pointer rounded border border-neutral-200 text-neutral-700 transition duration-300 ease-in-out focus:ring-2 focus:ring-neutral-700" checked />
+  <label for="checked-state" class="ms-3 text-sm font-medium text-neutral-900">Checked state</label>
+</div>
 `;
 
 const Checkboxes01 = () => {
   return (
-    <div className='space-x-2'>
-      <span className="inline-flex items-center rounded-md bg-gray-50 px-4 py-2.5 text-sm font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Badge</span>
-      <span className="inline-flex items-center rounded-md bg-red-50 px-4 py-2.5 text-sm font-medium text-red-700 ring-1 ring-inset ring-red-600/10">Badge</span>
-      <span className="inline-flex items-center rounded-md bg-yellow-50 px-4 py-2.5 text-sm font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Badge</span>
-      <span className="inline-flex items-center rounded-md bg-green-50 px-4 py-2.5 text-sm font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Badge</span>
+    <div className='gap-3 flex justify-center items-center flex-wrap p-6'>
+      {/* Default State */}
+      <div className='flex items-center'>
+        <input id='default-state' type="checkbox" className="size-4 rounded border border-neutral-200 focus:ring-neutral-700 focus:ring-2 text-neutral-700 cursor-pointer transition duration-300 ease-in-out" />
+        <label htmlFor="default-state" className="ms-3 text-sm font-medium text-neutral-900">Default state</label>
+      </div>
+      {/* Checked State */}
+      <div className='flex items-center'>
+        <input id='checked-state' type="checkbox" className="size-4 rounded border border-neutral-200 focus:ring-neutral-700 focus:ring-2 text-neutral-700 cursor-pointer transition duration-300 ease-in-out" checked />
+        <label htmlFor="checked-state" className="ms-3 text-sm font-medium text-neutral-900">Checked state</label>
+      </div>
     </div>
   )
 }

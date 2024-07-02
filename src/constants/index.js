@@ -29,6 +29,12 @@ import {
   Buttons09, buttons09CodeSnippet,
 } from '../components/application-ui/elements/buttons';
 
+// Checbox Imports
+import {
+  Checkboxes01, checkboxes01CodeSnippet,
+  Checkboxes02, checkboxes02CodeSnippet,
+} from '../components/application-ui/elements/checkboxes';
+
 export const elementsData = {
   // Alert Component Data
   alert: {
@@ -80,10 +86,11 @@ export const elementsData = {
   checkbox: {
     cardTitle: "Checkbox",
     cardDescription: "Checkbox are used to select or deselect a value.",
-    title: 'Checkbox',
+    title: 'Checkbox Components',
     description: 'Sample checkbox component.',
     tabs: [
-      { component: Buttons01, codeSnippet: buttons01CodeSnippet, label: 'Button 01' }
+      { component: Checkboxes01, codeSnippet: checkboxes01CodeSnippet, label: 'Checkbox states' },
+      { component: Checkboxes02, codeSnippet: checkboxes02CodeSnippet, label: 'Checkboxes with accents' },
     ]
   }
 };
