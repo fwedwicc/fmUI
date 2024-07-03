@@ -41,6 +41,7 @@ import {
 // Toggle Imports
 import {
   Toggles01, toggles01CodeSnippet,
+  Toggles02, toggles02CodeSnippet,
 } from '../components/application-ui/elements/toggles';
 
 export const elementsData = {
@@ -112,6 +113,7 @@ export const elementsData = {
     description: 'Employ these fmUI toggle components to enable users to switch between two states, providing an intuitive way to control settings and preferences within your interface.',
     tabs: [
       { component: Toggles01, codeSnippet: toggles01CodeSnippet, label: 'Toggle states' },
+      { component: Toggles02, codeSnippet: toggles02CodeSnippet, label: 'Toggle with accents' },
     ]
   },
 };

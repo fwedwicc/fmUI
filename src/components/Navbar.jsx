@@ -53,6 +53,8 @@ const Navbar = () => {
         return 'Checkboxes';
       case '/components/alert':
         return 'Alerts';
+      case '/components/toggle':
+        return 'Toggles';
       default:
         return <HiHeart />;
     }
