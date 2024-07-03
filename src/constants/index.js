@@ -45,7 +45,7 @@ import {
   Inputs03, inputs03CodeSnippet,
   Inputs04, inputs04CodeSnippet,
   Inputs05, inputs05CodeSnippet,
-  // Inputs06, inputs06CodeSnippet,
+  Inputs06, inputs06CodeSnippet,
 
 } from '../components/application-ui/elements/input-fields';
 
@@ -130,6 +130,7 @@ export const elementsData = {
       { component: Inputs03, codeSnippet: inputs03CodeSnippet, label: 'Input field with icons' },
       { component: Inputs04, codeSnippet: inputs04CodeSnippet, label: 'Input field sizes' },
       { component: Inputs05, codeSnippet: inputs05CodeSnippet, label: 'Input field with validations' },
+      { component: Inputs06, codeSnippet: inputs06CodeSnippet, label: 'Input field with floating label' },
     ]
   },
   // Toggle Component Data

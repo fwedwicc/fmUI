@@ -26,16 +26,15 @@ const Inputs05 = () => {
         <div>
           <label htmlFor='success' className="block text-sm font-medium text-green-500 mb-1.5">Email Address</label>
           <input id='success' type="text" className="block rounded-md w-full bg-neutral-50 border border-green-500 transition duration-300 ease-in-out focus:ring-1 focus:ring-green-500 focus:border-green-500 text-sm py-2.5 px-3 placeholder:text-green-500" placeholder="Success input" required />
-          <span class="mt-2 text-sm text-green-500">Some success message.</span>
+          <span className="mt-2 text-sm text-green-500">Some success message.</span>
         </div>
         {/* Error Input Validation */}
         <div>
           <label htmlFor='success' className="block text-sm font-medium text-red-500 mb-1.5">Email Address</label>
           <input id='success' type="text" className="block rounded-md w-full bg-neutral-50 border border-red-500 transition duration-300 ease-in-out focus:ring-1 focus:ring-red-500 focus:border-red-500 text-sm py-2.5 px-3 placeholder:text-red-500" placeholder="Error input" required />
-          <span class="mt-2 text-sm text-red-500">Some error message.</span>
+          <span className="mt-2 text-sm text-red-500">Some error message.</span>
         </div>
       </div>
-
     </div>
   )
 }
