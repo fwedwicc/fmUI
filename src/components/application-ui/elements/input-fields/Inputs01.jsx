@@ -10,7 +10,6 @@ Then, include the plugin in your Tailwind CSS configuration file (tailwind.confi
 <input type="text" class="block w-full cursor-not-allowed rounded-md border border-neutral-200 bg-neutral-50 px-3 py-2.5 text-sm placeholder:text-neutral-400" placeholder="Disabled" disabled />
 <!-- Read only -->
 <input type="text" class="block w-full rounded-md border border-neutral-200 bg-neutral-50 px-3 py-2.5 text-sm placeholder:text-neutral-800" placeholder="Read only" disabled />
-
 `;
 
 const Inputs01 = () => {
