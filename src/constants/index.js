@@ -38,6 +38,14 @@ import {
   Checkboxes05, checkboxes05CodeSnippet,
 } from '../components/application-ui/elements/checkboxes';
 
+// Input Imports
+import {
+  Inputs01, inputs01CodeSnippet,
+  // Inputs02, inputs02CodeSnippet,
+  // Inputs03, inputs03CodeSnippet,
+  // Inputs04, inputs04CodeSnippet,
+} from '../components/application-ui/elements/input-fields';
+
 // Toggle Imports
 import {
   Toggles01, toggles01CodeSnippet,
@@ -105,6 +113,16 @@ export const elementsData = {
       { component: Checkboxes03, codeSnippet: checkboxes03CodeSnippet, label: 'List of checkbox with label' },
       { component: Checkboxes04, codeSnippet: checkboxes04CodeSnippet, label: 'Grouped checkbox with label and description' },
       { component: Checkboxes05, codeSnippet: checkboxes05CodeSnippet, label: 'Advanced grouped checkboxes' },
+    ]
+  },
+  // Input Field Component Data
+  inputField: {
+    cardTitle: "Input Field",
+    cardDescription: "Input field is a checkbox that is styled to look like a switch button.",
+    title: 'Input Field Components',
+    description: '',
+    tabs: [
+      { component: Inputs01, codeSnippet: inputs01CodeSnippet, label: 'Input field states' },
     ]
   },
   // Toggle Component Data

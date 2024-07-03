@@ -55,6 +55,8 @@ const Navbar = () => {
         return 'Alerts';
       case '/components/toggle':
         return 'Toggles';
+      case '/components/inputField':
+        return 'Input Fields';
       default:
         return <HiHeart />;
     }
