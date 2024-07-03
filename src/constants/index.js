@@ -41,8 +41,8 @@ import {
 // Input Imports
 import {
   Inputs01, inputs01CodeSnippet,
-  // Inputs02, inputs02CodeSnippet,
-  // Inputs03, inputs03CodeSnippet,
+  Inputs02, inputs02CodeSnippet,
+  Inputs03, inputs03CodeSnippet,
   // Inputs04, inputs04CodeSnippet,
 } from '../components/application-ui/elements/input-fields';
 
@@ -118,11 +118,13 @@ export const elementsData = {
   // Input Field Component Data
   inputField: {
     cardTitle: "Input Field",
-    cardDescription: "Input field is a checkbox that is styled to look like a switch button.",
+    cardDescription: "Input fields enabling users to input non-standardized responses.",
     title: 'Input Field Components',
-    description: '',
+    description: 'Utilize these fmUI input field components to allow users to enter and edit text, offering a straightforward way to gather user information and feedback within your interface.',
     tabs: [
       { component: Inputs01, codeSnippet: inputs01CodeSnippet, label: 'Input field states' },
+      { component: Inputs02, codeSnippet: inputs02CodeSnippet, label: 'Input field with label' },
+      { component: Inputs03, codeSnippet: inputs03CodeSnippet, label: 'Input field with icons' },
     ]
   },
   // Toggle Component Data
