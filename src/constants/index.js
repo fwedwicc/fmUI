@@ -42,6 +42,8 @@ import {
 import {
   Toggles01, toggles01CodeSnippet,
   Toggles02, toggles02CodeSnippet,
+  Toggles03, toggles03CodeSnippet,
+  Toggles04, toggles04CodeSnippet,
 } from '../components/application-ui/elements/toggles';
 
 export const elementsData = {
@@ -114,6 +116,8 @@ export const elementsData = {
     tabs: [
       { component: Toggles01, codeSnippet: toggles01CodeSnippet, label: 'Toggle states' },
       { component: Toggles02, codeSnippet: toggles02CodeSnippet, label: 'Toggle with accents' },
+      { component: Toggles03, codeSnippet: toggles03CodeSnippet, label: 'Toggle with labels' },
+      { component: Toggles04, codeSnippet: toggles04CodeSnippet, label: 'Toggle sizes' },
     ]
   },
 };
