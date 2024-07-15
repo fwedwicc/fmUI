@@ -9,8 +9,8 @@ import {
 // Avatar Imports
 import {
   Avatar01, avatar01CodeSnippet,
-  // Avatar02, avatar02CodeSnippet,
-  // Avatar03, avatar03CodeSnippet,
+  Avatar02, avatar02CodeSnippet,
+  Avatar03, avatar03CodeSnippet,
   // Avatar04, avatar04CodeSnippet,
 } from '../components/application-ui/elements/avatar';
 
@@ -94,6 +94,8 @@ export const elementsData = {
     description: 'Utilize these fmUI Avatar components to provide visual representations of users, enhancing personalization and recognition within your interface by displaying user images or icons effectively.',
     tabs: [
       { component: Avatar01, codeSnippet: avatar01CodeSnippet, label: 'Default avatars' },
+      { component: Avatar02, codeSnippet: avatar02CodeSnippet, label: 'Avatar with initial placeholder' },
+      { component: Avatar03, codeSnippet: avatar03CodeSnippet, label: 'Avatar with ring variants' },
     ]
   },
   // Badge Component Data
