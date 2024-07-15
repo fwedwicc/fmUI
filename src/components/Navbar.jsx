@@ -47,6 +47,8 @@ const Navbar = () => {
     switch (location.pathname) {
       case '/components/alert':
         return 'Alerts';
+      case '/components/avatar':
+        return 'Avatars';
       case '/components/badge':
         return 'Badges';
       case '/components/breadcrumbs':

@@ -6,6 +6,14 @@ import {
   Alert04, alert04CodeSnippet,
 } from '../components/application-ui/elements/alerts';
 
+// Avatar Imports
+import {
+  Avatar01, avatar01CodeSnippet,
+  // Avatar02, avatar02CodeSnippet,
+  // Avatar03, avatar03CodeSnippet,
+  // Avatar04, avatar04CodeSnippet,
+} from '../components/application-ui/elements/avatar';
+
 // Badge Imports
 import {
   Badges01, badges01CodeSnippet,
@@ -76,6 +84,16 @@ export const elementsData = {
       { component: Alert02, codeSnippet: alert02CodeSnippet, label: 'Alerts with dismiss button' },
       { component: Alert03, codeSnippet: alert03CodeSnippet, label: 'Alerts with title' },
       { component: Alert04, codeSnippet: alert04CodeSnippet, label: 'Alerts with CTA' },
+    ]
+  },
+  // Avatar Component Data
+  avatar: {
+    cardTitle: "Avatar",
+    cardDescription: "Avatars visually represent users with images or icons.",
+    title: 'Avatar Components',
+    description: 'Utilize these fmUI Avatar components to provide visual representations of users, enhancing personalization and recognition within your interface by displaying user images or icons effectively.',
+    tabs: [
+      { component: Avatar01, codeSnippet: avatar01CodeSnippet, label: 'Default avatars' },
     ]
   },
   // Badge Component Data
