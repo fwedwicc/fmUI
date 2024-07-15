@@ -19,7 +19,7 @@ import {
 // Breadcrumbs Imports
 import {
   Breadcrumbs01, breadcrumbs01CodeSnippet,
-  // Breadcrumbs02, breadcrumbs02CodeSnippet,
+  Breadcrumbs02, breadcrumbs02CodeSnippet,
   // Breadcrumbs03, breadcrumbs03CodeSnippet,
   // Breadcrumbs04, breadcrumbs04CodeSnippet,
   // Breadcrumbs05, breadcrumbs05CodeSnippet,
@@ -104,6 +104,7 @@ export const elementsData = {
     description: "Leverage these fmUI Breadcrumb components to provide intuitive navigation paths within your interface, enhancing user experience by clearly indicating the current page's location and allowing easy movement between hierarchical levels of content.",
     tabs: [
       { component: Breadcrumbs01, codeSnippet: breadcrumbs01CodeSnippet, label: 'Default Breadcrumbs' },
+      { component: Breadcrumbs02, codeSnippet: breadcrumbs02CodeSnippet, label: 'Breadcrumbs with icons' },
     ]
   },
   // Button Component Data
