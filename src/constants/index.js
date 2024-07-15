@@ -11,7 +11,7 @@ import {
   Avatar01, avatar01CodeSnippet,
   Avatar02, avatar02CodeSnippet,
   Avatar03, avatar03CodeSnippet,
-  // Avatar04, avatar04CodeSnippet,
+  Avatar04, avatar04CodeSnippet,
 } from '../components/application-ui/elements/avatar';
 
 // Badge Imports
@@ -96,6 +96,7 @@ export const elementsData = {
       { component: Avatar01, codeSnippet: avatar01CodeSnippet, label: 'Default avatars' },
       { component: Avatar02, codeSnippet: avatar02CodeSnippet, label: 'Avatar with initial placeholder' },
       { component: Avatar03, codeSnippet: avatar03CodeSnippet, label: 'Avatar with ring variants' },
+      { component: Avatar04, codeSnippet: avatar04CodeSnippet, label: 'Avatar with inidicator' },
     ]
   },
   // Badge Component Data
