@@ -45,14 +45,16 @@ const Navbar = () => {
   // To get the current path/loc
   const getPageName = () => {
     switch (location.pathname) {
+      case '/components/alert':
+        return 'Alerts';
       case '/components/badge':
         return 'Badges';
+      case '/components/breadcrumbs':
+        return 'Breadcrumbs';
       case '/components/button':
         return 'Buttons';
       case '/components/checkbox':
         return 'Checkboxes';
-      case '/components/alert':
-        return 'Alerts';
       case '/components/toggle':
         return 'Toggles';
       case '/components/inputField':

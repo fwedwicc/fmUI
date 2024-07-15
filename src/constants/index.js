@@ -16,6 +16,16 @@ import {
   Badges06, badges06CodeSnippet,
 } from '../components/application-ui/elements/badges';
 
+// Breadcrumbs Imports
+import {
+  Breadcrumbs01, breadcrumbs01CodeSnippet,
+  // Breadcrumbs02, breadcrumbs02CodeSnippet,
+  // Breadcrumbs03, breadcrumbs03CodeSnippet,
+  // Breadcrumbs04, breadcrumbs04CodeSnippet,
+  // Breadcrumbs05, breadcrumbs05CodeSnippet,
+  // Breadcrumbs06, breadcrumbs06CodeSnippet,
+} from '../components/application-ui/elements/breadcrumbs';
+
 // Button Imports
 import {
   Buttons01, buttons01CodeSnippet,
@@ -84,6 +94,16 @@ export const elementsData = {
       { component: Badges04, codeSnippet: badges04CodeSnippet, label: 'Icon badges' },
       { component: Badges05, codeSnippet: badges05CodeSnippet, label: 'Notication badge' },
       { component: Badges06, codeSnippet: badges06CodeSnippet, label: 'Buttons with badge' },
+    ]
+  },
+  // Breadcrumbs Component Data
+  breadcrumbs: {
+    cardTitle: "Breadcrumbs",
+    cardDescription: "Breadcrumbs help users navigate through the hierarchy of your site's structure.",
+    title: 'Breadcrumbs Components',
+    description: "Leverage these fmUI Breadcrumb components to provide intuitive navigation paths within your interface, enhancing user experience by clearly indicating the current page's location and allowing easy movement between hierarchical levels of content.",
+    tabs: [
+      { component: Breadcrumbs01, codeSnippet: breadcrumbs01CodeSnippet, label: 'Default Breadcrumbs' },
     ]
   },
   // Button Component Data
