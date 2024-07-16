@@ -45,6 +45,7 @@ const Navbar = () => {
   // To get the current path/loc
   const getPageName = () => {
     switch (location.pathname) {
+      // Components
       case '/components/alert':
         return 'Alerts';
       case '/components/avatar':
@@ -61,6 +62,9 @@ const Navbar = () => {
         return 'Toggles';
       case '/components/inputField':
         return 'Input Fields';
+      // Templates
+      case '/components/authPage':
+        return 'Auth Pages';
       default:
         return <HiHeart />;
     }

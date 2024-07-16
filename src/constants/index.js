@@ -211,11 +211,11 @@ export const templatesData = {
   // Sign-up form Data
   authPage: {
     cardTitle: "Auth Pages",
-    cardDescription: "",
+    cardDescription: "Authentication Pages facilitate user login and registration processes.",
     title: 'Authentication Pages',
-    description: '',
+    description: 'Leverage these fmUI Authentication Pages to create seamless and secure user login and registration experiences, ensuring efficient access control and a smooth onboarding process within your interface.',
     tabs: [
-      { component: AuthPage01, codeSnippet: authPage01CodeSnippet, label: 'Sign-up form card' }
+      { component: AuthPage01, codeSnippet: authPage01CodeSnippet, label: 'Sign-in form inside card' }
     ]
   }
 }
