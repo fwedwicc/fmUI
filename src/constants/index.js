@@ -1,3 +1,4 @@
+// ------------- Component Imports -------------
 // Alert Imports
 import {
   Alert01, alert01CodeSnippet,
@@ -72,6 +73,21 @@ import {
   Toggles03, toggles03CodeSnippet,
   Toggles04, toggles04CodeSnippet,
 } from '../components/application-ui/elements/toggles';
+
+// ------------- // Component Imports -------------
+
+// ------------- Template Imports -------------
+
+// Toggle Imports
+import {
+  AuthPage01, authPage01CodeSnippet,
+} from '../components/application-ui/templates/auth-pages';
+
+
+
+// ------------- // Template Imports -------------
+
+
 
 export const elementsData = {
   // Alert Component Data
@@ -193,13 +209,13 @@ export const elementsData = {
 
 export const templatesData = {
   // Sign-up form Data
-  checkbox: {
-    cardTitle: "Sign-up form",
-    cardDescription: "Sign-up formare used to select or deselect a value.",
-    title: 'Sign-up form',
-    description: 'Sample Sign-up form component.',
+  authPage: {
+    cardTitle: "Auth Pages",
+    cardDescription: "",
+    title: 'Authentication Pages',
+    description: '',
     tabs: [
-      { component: Buttons01, codeSnippet: buttons01CodeSnippet, label: 'Button 01' }
+      { component: AuthPage01, codeSnippet: authPage01CodeSnippet, label: 'Sign-up form card' }
     ]
   }
 }

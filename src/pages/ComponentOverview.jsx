@@ -1,12 +1,19 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Tab, Navbar } from '../components';
-import { elementsData } from '../constants';
+import { elementsData, templatesData } from '../constants';
 import { motion } from 'framer-motion';
 
 const ComponentOverview = () => {
   const { type } = useParams();
-  const { title, description, tabs } = elementsData[type] || { title: 'Unknown Component', description: 'No component found for this type.', tabs: [] };
+
+  const elementData = elementsData[type];
+  const templateData = templatesData[type];
+
+  // Combine the data or use fallback values
+  const title = elementData?.title || templateData?.title || 'Unknown Component';
+  const description = elementData?.description || templateData?.description || 'No component found for this type.';
+  const tabs = elementData?.tabs || templateData?.tabs || [];
 
   return (
     <motion.div
