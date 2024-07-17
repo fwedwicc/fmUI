@@ -63,8 +63,16 @@ import {
   Inputs04, inputs04CodeSnippet,
   Inputs05, inputs05CodeSnippet,
   Inputs06, inputs06CodeSnippet,
-
 } from '../components/application-ui/elements/input-fields';
+
+// Radio Imports
+import {
+  Radios01, radios01CodeSnippet,
+  // Radios02, radios02CodeSnippet,
+  // Radios03, radios03CodeSnippet,
+  // Radios04, radios04CodeSnippet,
+  // Radios05, radios05CodeSnippet,
+} from '../components/application-ui/elements/radios';
 
 // Toggle Imports
 import {
@@ -78,7 +86,7 @@ import {
 
 // ------------- Template Imports -------------
 
-// Toggle Imports
+// Auth Page Imports
 import {
   AuthPage01, authPage01CodeSnippet,
 } from '../components/application-ui/templates/auth-pages';
@@ -191,6 +199,16 @@ export const elementsData = {
       { component: Inputs06, codeSnippet: inputs06CodeSnippet, label: 'Input field with floating label' },
     ]
   },
+  // Radio Component Data
+  radio: {
+    cardTitle: "Radio",
+    cardDescription: "Radio buttons allow users to select a single option from a set.",
+    title: 'Radio Components',
+    description: 'Utilize these fmUI Radio components to enable users to make a single selection from multiple options, providing clear and accessible choices within your interface.',
+    tabs: [
+      { component: Radios01, codeSnippet: radios01CodeSnippet, label: 'Radio states' },
+    ]
+  },
   // Toggle Component Data
   toggle: {
     cardTitle: "Toggle",
@@ -208,7 +226,7 @@ export const elementsData = {
 
 
 export const templatesData = {
-  // Sign-up form Data
+  // Authentication Pages Data
   authPage: {
     cardTitle: "Auth Pages",
     cardDescription: "Authentication Pages facilitate user login and registration processes.",
