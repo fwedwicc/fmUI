@@ -68,7 +68,7 @@ import {
 // Radio Imports
 import {
   Radios01, radios01CodeSnippet,
-  // Radios02, radios02CodeSnippet,
+  Radios02, radios02CodeSnippet,
   // Radios03, radios03CodeSnippet,
   // Radios04, radios04CodeSnippet,
   // Radios05, radios05CodeSnippet,
@@ -207,6 +207,7 @@ export const elementsData = {
     description: 'Utilize these fmUI Radio components to enable users to make a single selection from multiple options, providing clear and accessible choices within your interface.',
     tabs: [
       { component: Radios01, codeSnippet: radios01CodeSnippet, label: 'Radio states' },
+      { component: Radios02, codeSnippet: radios02CodeSnippet, label: 'Radios with accents' },
     ]
   },
   // Toggle Component Data

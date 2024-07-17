@@ -58,10 +58,12 @@ const Navbar = () => {
         return 'Buttons';
       case '/components/checkbox':
         return 'Checkboxes';
-      case '/components/toggle':
-        return 'Toggles';
       case '/components/inputField':
         return 'Input Fields';
+      case '/components/radio':
+        return 'Radio';
+      case '/components/toggle':
+        return 'Toggles';
       // Templates
       case '/components/authPage':
         return 'Auth Pages';
