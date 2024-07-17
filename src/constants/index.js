@@ -69,7 +69,7 @@ import {
 import {
   Radios01, radios01CodeSnippet,
   Radios02, radios02CodeSnippet,
-  // Radios03, radios03CodeSnippet,
+  Radios03, radios03CodeSnippet,
   // Radios04, radios04CodeSnippet,
   // Radios05, radios05CodeSnippet,
 } from '../components/application-ui/elements/radios';
@@ -208,6 +208,7 @@ export const elementsData = {
     tabs: [
       { component: Radios01, codeSnippet: radios01CodeSnippet, label: 'Radio states' },
       { component: Radios02, codeSnippet: radios02CodeSnippet, label: 'Radios with accents' },
+      { component: Radios03, codeSnippet: radios03CodeSnippet, label: 'List of radio with label' },
     ]
   },
   // Toggle Component Data
