@@ -77,7 +77,7 @@ import {
 // Tab Imports
 import {
   Tabs01, tabs01CodeSnippet,
-  // Tabs02, tabs02CodeSnippet,
+  Tabs02, tabs02CodeSnippet,
   // Tabs03, tabs03CodeSnippet,
   // Tabs04, tabs04CodeSnippet,
   // Tabs05, tabs05CodeSnippet,
@@ -230,6 +230,7 @@ export const elementsData = {
     description: 'Leverage these fmUI Tab components to efficiently organize content into distinct sections, allowing users to navigate between different views effortlessly and enhancing the overall usability of your interface.',
     tabs: [
       { component: Tabs01, codeSnippet: tabs01CodeSnippet, label: 'Default Tab' },
+      { component: Tabs02, codeSnippet: tabs02CodeSnippet, label: 'Underlined Tab' },
     ]
   },
   // Toggle Component Data
