@@ -62,6 +62,8 @@ const Navbar = () => {
         return 'Input Fields';
       case '/components/radio':
         return 'Radio';
+      case '/components/tab':
+        return 'Tab';
       case '/components/toggle':
         return 'Toggles';
       // Templates

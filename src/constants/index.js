@@ -74,6 +74,15 @@ import {
   Radios05, radios05CodeSnippet,
 } from '../components/application-ui/elements/radios';
 
+// Tab Imports
+import {
+  Tabs01, tabs01CodeSnippet,
+  // Tabs02, tabs02CodeSnippet,
+  // Tabs03, tabs03CodeSnippet,
+  // Tabs04, tabs04CodeSnippet,
+  // Tabs05, tabs05CodeSnippet,
+} from '../components/application-ui/elements/tabs';
+
 // Toggle Imports
 import {
   Toggles01, toggles01CodeSnippet,
@@ -211,6 +220,16 @@ export const elementsData = {
       { component: Radios03, codeSnippet: radios03CodeSnippet, label: 'List of radio with label' },
       { component: Radios04, codeSnippet: radios04CodeSnippet, label: 'Grouped radio with label and description' },
       { component: Radios05, codeSnippet: radios05CodeSnippet, label: 'Advanced grouped radios' },
+    ]
+  },
+  // Tab Component Data
+  tab: {
+    cardTitle: "Tabs",
+    cardDescription: "Tabs organize content into separate views for easy navigation.",
+    title: 'Tab Components',
+    description: 'Leverage these fmUI Tab components to efficiently organize content into distinct sections, allowing users to navigate between different views effortlessly and enhancing the overall usability of your interface.',
+    tabs: [
+      { component: Tabs01, codeSnippet: tabs01CodeSnippet, label: 'Default Tab' },
     ]
   },
   // Toggle Component Data
