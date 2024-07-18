@@ -79,7 +79,7 @@ import {
   Tabs01, tabs01CodeSnippet,
   Tabs02, tabs02CodeSnippet,
   Tabs03, tabs03CodeSnippet,
-  // Tabs04, tabs04CodeSnippet,
+  Tabs04, tabs04CodeSnippet,
   // Tabs05, tabs05CodeSnippet,
 } from '../components/application-ui/elements/tabs';
 
@@ -232,6 +232,7 @@ export const elementsData = {
       { component: Tabs01, codeSnippet: tabs01CodeSnippet, label: 'Default Tab' },
       { component: Tabs02, codeSnippet: tabs02CodeSnippet, label: 'Underlined Tab' },
       { component: Tabs03, codeSnippet: tabs03CodeSnippet, label: 'Button Tab' },
+      { component: Tabs04, codeSnippet: tabs04CodeSnippet, label: 'Tab with icons' },
     ]
   },
   // Toggle Component Data
