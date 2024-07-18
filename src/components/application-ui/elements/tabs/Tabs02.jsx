@@ -27,7 +27,7 @@ const Tabs02 = () => {
             <a href="#" className="inline-block px-4 py-2.5 text-neutral-900 border-b border-neutral-900 rounded-t-lg transition duration-300 ease-in-out">Home</a>
           </li>
           <li className="me-2">
-            <a href="#" className="inline-block px-4 py-2.5 border-b border-transparent rounded-t-lg hover:text-neutral-700 hover:border-neutral-300 transition duration-300 ease-in-out">Profile</a>
+            <a href="#" className="inline-block px-4 py-2.5 border-b border-transparent rounded-t-lg hover:text-neutral-700 hover:border-neutral-300 transition duration-300 ease-in-out">Dashboard</a>
           </li>
           <li className="me-2">
             <a href="#" className="inline-block px-4 py-2.5 border-b border-transparent rounded-t-lg hover:text-neutral-700 hover:border-neutral-300 transition duration-300 ease-in-out">Settings</a>
