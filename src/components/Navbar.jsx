@@ -77,7 +77,7 @@ const Navbar = () => {
   return (
     <div className={`fixed flex w-full h-[4.5rem] justify-between items-center lg:px-[7rem] md:px-[4rem] px-7 backdrop-blur-md bg-neutral-50/60 z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
       <Link to='/home'>
-        <img src={fmUILogo} alt="fmUI Logo" className='w-auto h-7' />
+        <img src={fmUILogo} alt="fmUI Logo" className='w-auto lg:h-7 md:h-7 h-5' />
       </Link>
       <div className='flex gap-1.5 border p-1.5 rounded-lg items-center'>
         <Link className={linkClasses('/home')} to='/home'>
@@ -94,7 +94,7 @@ const Navbar = () => {
           {getPageName()}
         </span>
       </div>
-      <header className='flex items-center gap-4'>
+      <header className='lg:flex md:flex items-center gap-4 hidden'>
         <span className='text-sm font-bold'>v1.0</span>
         <a href='https://github.com/fwedwicc/fmUI' target='_blank' rel='noopener noreferrer' className="block p-2 rounded-full transition duration-300 ease-in-out hover:bg-neutral-200 focus:ring-2 focus:ring-neutral-200">
           <FaGithub className="w-6 h-auto" />

@@ -97,6 +97,7 @@ import {
 // Auth Page Imports
 import {
   AuthPage01, authPage01CodeSnippet,
+  AuthPage02, authPage02CodeSnippet,
 } from '../components/application-ui/templates/auth-pages';
 
 
@@ -258,7 +259,8 @@ export const templatesData = {
     title: 'Authentication Pages',
     description: 'Leverage these fmUI Authentication Pages to create seamless and secure user login and registration experiences, ensuring efficient access control and a smooth onboarding process within your interface.',
     tabs: [
-      { component: AuthPage01, codeSnippet: authPage01CodeSnippet, label: 'Sign-in form inside card' }
+      { component: AuthPage01, codeSnippet: authPage01CodeSnippet, label: 'Sign-in form inside card' },
+      { component: AuthPage02, codeSnippet: authPage02CodeSnippet, label: 'Sign-up form inside card' }
     ]
   }
 }
