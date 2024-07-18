@@ -80,7 +80,6 @@ import {
   Tabs02, tabs02CodeSnippet,
   Tabs03, tabs03CodeSnippet,
   Tabs04, tabs04CodeSnippet,
-  // Tabs05, tabs05CodeSnippet,
 } from '../components/application-ui/elements/tabs';
 
 // Toggle Imports

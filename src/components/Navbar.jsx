@@ -75,7 +75,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`fixed flex w-full h-[4.5rem] justify-between items-center px-[7rem] backdrop-blur-md bg-neutral-50/60 z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
+    <div className={`fixed flex w-full h-[4.5rem] justify-between items-center lg:px-[7rem] md:px-[4rem] px-7 backdrop-blur-md bg-neutral-50/60 z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
       <Link to='/home'>
         <img src={fmUILogo} alt="fmUI Logo" className='w-auto h-7' />
       </Link>

@@ -13,12 +13,12 @@ const Components = () => {
     >
       <Navbar />
       <div className='pt-[4.5rem] px-[0.8rem]'>
-        <div className='bg-white border border-neutral-300/40 py-12 px-24 rounded-[1rem] flex flex-col'>
+        <div className='bg-white border border-neutral-300/40 py-12 lg:px-24 md:px-12 px-4 rounded-[1rem] flex flex-col'>
           <div className='space-y-10'>
             {/* Rendered Elements */}
             <div className='space-y-6'>
               <h1 className='text-[2.5rem] leading-none font-semibold'>Components</h1>
-              <div className='grid lg:grid-cols-4 grid-cols-2 gap-4'>
+              <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4'>
                 {Object.keys(elementsData).map(key => (
                   <Card
                     key={key}
@@ -33,7 +33,7 @@ const Components = () => {
             {/* Rendered Templates */}
             <div className='space-y-6'>
               <h1 className='text-[2.5rem] leading-none font-semibold'>Templates</h1>
-              <div className='grid lg:grid-cols-4 grid-cols-2 gap-4'>
+              <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4'>
                 {Object.keys(templatesData).map(key => (
                   <Card
                     key={key}
