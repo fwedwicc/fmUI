@@ -75,13 +75,13 @@ const AuthPage01 = () => {
             </div>
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-2">
-                <span className="text-sm font-medium text-zinc-700">Email Address</span>
-                <input type="email" placeholder="john@email.com" className="h-11 w-full rounded-md border border-neutral-200 bg-neutral-100 px-4 text-sm transition duration-300 ease-in-out focus:border-neutral-500 focus:ring-1 focus:ring-neutral-500" />
+                <label htmlFor="email" className="text-sm font-medium text-zinc-700">Email Address</label>
+                <input type="email" id='email' placeholder="john@email.com" className="h-11 w-full rounded-md border border-neutral-200 bg-neutral-100 px-4 text-sm transition duration-300 ease-in-out focus:border-neutral-500 focus:ring-1 focus:ring-neutral-500" />
               </div>
               <div className="flex flex-col gap-2">
-                <span className="text-sm font-medium text-zinc-700">Password</span>
+                <label htmlFor="password" className="text-sm font-medium text-zinc-700">Password</label>
                 <div className="relative w-full">
-                  <input type="password" placeholder="•••••••••••" className="h-11 w-full rounded-md border border-neutral-200 bg-neutral-100 px-4 pr-10 text-sm transition duration-300 ease-in-out focus:border-neutral-500 focus:ring-neutral-500" />
+                  <input type="password" id='password' placeholder="•••••••••••" className="h-11 w-full rounded-md border border-neutral-200 bg-neutral-100 px-4 pr-10 text-sm transition duration-300 ease-in-out focus:border-neutral-500 focus:ring-neutral-500" />
                   <button className="absolute right-0 top-1/2 h-full -translate-y-1/2 transform rounded-full px-2">
                     <svg className="h-auto w-4 text-neutral-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M3.53 2.47a.75.75 0 0 0-1.06 1.06l18 18a.75.75 0 1 0 1.06-1.06l-18-18ZM22.676 12.553a11.249 11.249 0 0 1-2.631 4.31l-3.099-3.099a5.25 5.25 0 0 0-6.71-6.71L7.759 4.577a11.217 11.217 0 0 1 4.242-.827c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113Z" />
