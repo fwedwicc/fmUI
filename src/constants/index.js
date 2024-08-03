@@ -1,5 +1,16 @@
 // ------------- Thumbnail Imports -------------
-import { alertThumbnail, avatarThumbnail, badgeThumbnail } from '../assets/thumbnails';
+import {
+  alertThumbnail,
+  avatarThumbnail,
+  badgeThumbnail,
+  breadcrumbsThumbnail,
+  buttonThumbnail,
+  checkboxThumbnail,
+  inputFieldThumbnail,
+  radioThumbnail,
+  tabsThumbnail,
+  toggleThumbnail
+} from '../assets/thumbnails';
 
 // ------------- Component Imports -------------
 // Alert Imports
@@ -160,6 +171,8 @@ export const elementsData = {
   },
   // Breadcrumbs Component Data
   breadcrumbs: {
+    cardImage: breadcrumbsThumbnail,
+    ImageAlt: "Breadcrumbs Illustration",
     cardTitle: "Breadcrumbs",
     cardDescription: "Breadcrumbs help users navigate through the hierarchy of your site's structure.",
     title: 'Breadcrumbs Components',
@@ -172,6 +185,8 @@ export const elementsData = {
   },
   // Button Component Data
   button: {
+    cardImage: buttonThumbnail,
+    ImageAlt: "Button Illustration",
     cardTitle: "Button",
     cardDescription: "Button allows the user take actions or make choieces.",
     title: 'Button Components',
@@ -190,6 +205,8 @@ export const elementsData = {
   },
   // Checkbox Component Data
   checkbox: {
+    cardImage: checkboxThumbnail,
+    ImageAlt: "Checkbox Illustration",
     cardTitle: "Checkbox",
     cardDescription: "Checkbox are used to select or deselect a value.",
     title: 'Checkbox Components',
@@ -204,6 +221,8 @@ export const elementsData = {
   },
   // Input Field Component Data
   inputField: {
+    cardImage: inputFieldThumbnail,
+    ImageAlt: "Input Field Illustration",
     cardTitle: "Input Field",
     cardDescription: "Input fields enabling users to input non-standardized responses.",
     title: 'Input Field Components',
@@ -219,6 +238,8 @@ export const elementsData = {
   },
   // Radio Component Data
   radio: {
+    cardImage: radioThumbnail,
+    ImageAlt: "Radio Illustration",
     cardTitle: "Radio",
     cardDescription: "Radio buttons allow users to select a single option from a set.",
     title: 'Radio Components',
@@ -233,6 +254,8 @@ export const elementsData = {
   },
   // Tab Component Data
   tab: {
+    cardImage: tabsThumbnail,
+    ImageAlt: "Tabs Illustration",
     cardTitle: "Tabs",
     cardDescription: "Tabs organize content into separate views for easy navigation.",
     title: 'Tab Components',
@@ -246,6 +269,8 @@ export const elementsData = {
   },
   // Toggle Component Data
   toggle: {
+    cardImage: toggleThumbnail,
+    ImageAlt: "Toggle Illustration",
     cardTitle: "Toggle",
     cardDescription: "Toggle is a checkbox that is styled to look like a switch button.",
     title: 'Toggle Components',
