@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { Tab, Navbar } from '../components';
+import { Tab, Navbar, Footer } from '../components';
 import { elementsData, templatesData } from '../constants';
 import { motion } from 'framer-motion';
 
@@ -40,8 +40,8 @@ const ComponentOverview = () => {
               </div>
             ))
           }
-          <h1>Footah</h1>
         </div>
+        <Footer />
       </div>
     </motion.div>
   );

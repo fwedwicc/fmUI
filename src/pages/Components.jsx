@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import { Navbar, Card } from '../components';
+import { Navbar, Card, Footer } from '../components';
 import { elementsData, templatesData } from '../constants';
 
 const Components = () => {
@@ -50,6 +50,7 @@ const Components = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </motion.div>
   );

@@ -20,7 +20,7 @@ const Hero = () => {
       <div className='col-span-1 space-y-6'>
         <div className='space-y-3'>
           <h1 className='md:text-[5rem] text-[3rem] leading-none font-black'>fmUI, crafted with Tailwind CSS.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi debitis optio dolores illo suscipit atque exercitationem molestias magnam voluptates aspernatur.</p>
+          <p>fmUI is a comprehensive collection of free Tailwind CSS components and templates for your projects. With diverse components and sample pages, you can develop websites, web apps, and more. Explore our selection to enhance your development process with ease and flexibility.</p>
         </div>
         <div className='space-x-3'>
           <Link to='/components'>
@@ -29,10 +29,10 @@ const Hero = () => {
               <MdArrowOutward className='h-4 w-auto' />
             </button>
           </Link>
-          <button className='inline-flex text-sm gap-2.5 items-center px-4 py-2.5 transition duration-300 ease-in-out text-zinc-600 bg-neutral-200 border border-neutral-300 hover:bg-neutral-400/40 font-medium rounded-md'>
+          <a href='https://github.com/fwedwicc/fmUI' target='_blank' rel='noopener noreferrer' className='inline-flex text-sm gap-2.5 items-center px-4 py-2.5 transition duration-300 ease-in-out text-zinc-600 bg-neutral-200 border border-neutral-300 hover:bg-neutral-400/40 font-medium rounded-md'>
             View on GitHub
             <FaGithub className='h-4 w-auto' />
-          </button>
+          </a>
         </div>
       </div>
       <div className='col-span-1 grid grid-cols-2 grid-rows-2'>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Navbar, Hero, SampleCard, SampleCart, SampleChat, SampleFooter, SampleLogin, SampleModal } from '../components';
+import { Navbar, Hero, SampleCard, SampleCart, SampleChat, SampleFooter, SampleLogin, SampleModal, Footer } from '../components';
 
 const Home = () => {
   return (
@@ -18,29 +18,6 @@ const Home = () => {
             <Hero />
           </div>
           {/* Interface Overview */}
-          {/* <div className='grid grid-cols-3 grid-rows-4 mt-12'>
-            <div className='col-span-1 row-span-2 pr-2.5 pb-2.5'>
-              <SampleCard />
-            </div>
-            <div className='col-span-1 pb-2.5 px-2.5 border-l border-b'>
-              <SampleModal />
-            </div>
-            <div className='col-span-1 row-span-3 border-l border-b pl-2.5 pb-2.5'>
-              <SampleChat />
-            </div>
-            <div className='col-span-1 row-span-2 p-2.5 border-l border-b'>
-              <SampleLogin />
-            </div>
-            <div className='col-span-1 row-span-1 pr-2.5 pt-2.5 pb-2.5 border-t border-b'>
-              <SampleCart />
-            </div>
-            <div className='col-span-1 row-span-1'>
-
-            </div>
-            <div className='col-span-2 row-span-1 border-l pl-2.5 pt-2.5'>
-              <SampleFooter />
-            </div>
-          </div> */}
           <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-12 px-4'>
             <div className='col-span-1 self-start'>
               <div className='md:pr-2.5 pb-2.5 md:border-r'>
@@ -63,6 +40,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </motion.div>
   );

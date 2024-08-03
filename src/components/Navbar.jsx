@@ -97,7 +97,7 @@ const Navbar = () => {
       <header className='lg:flex md:flex items-center gap-4 hidden'>
         <span className='text-sm font-bold'>v1.0</span>
         <a href='https://github.com/fwedwicc/fmUI' target='_blank' rel='noopener noreferrer' className="block p-2 rounded-full transition duration-300 ease-in-out hover:bg-neutral-200 focus:ring-2 focus:ring-neutral-200">
-          <FaGithub className="w-6 h-auto" />
+          <FaGithub className="w-5 h-auto" />
         </a>
       </header>
     </div>
