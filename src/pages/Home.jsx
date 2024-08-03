@@ -12,9 +12,11 @@ const Home = () => {
     >
       <Navbar />
       <div className='pt-[4.5rem] px-[0.8rem]'>
-        <div className='bg-white border border-neutral-300/40 py-12 lg:px-16 md:px-12 px-4 rounded-[1rem] flex flex-col'>
+        <div className='bg-white border border-neutral-300/40 py-12 rounded-[1rem] flex flex-col'>
           {/* Rendered Hero */}
-          <Hero />
+          <div className='lg:px-24 md:px-12'>
+            <Hero />
+          </div>
           {/* Interface Overview */}
           {/* <div className='grid grid-cols-3 grid-rows-4 mt-12'>
             <div className='col-span-1 row-span-2 pr-2.5 pb-2.5'>
@@ -39,7 +41,7 @@ const Home = () => {
               <SampleFooter />
             </div>
           </div> */}
-          <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-12'>
+          <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-12 px-4'>
             <div className='col-span-1 self-start'>
               <div className='md:pr-2.5 pb-2.5 md:border-r'>
                 <SampleCard />

@@ -109,6 +109,8 @@ import {
 export const elementsData = {
   // Alert Component Data
   alert: {
+    cardImage: "https://img.daisyui.com/images/components/alert.webp",
+    ImageAlt: "Alert Illustration",
     cardTitle: "Alert",
     cardDescription: "Alert inform users about important events.",
     title: 'Alert Components',
