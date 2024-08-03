@@ -11,7 +11,7 @@ const SampleChat = () => {
   );
 
   const MessageBubble = ({ message, alignment, sender }) => (
-    <div className={`flex ${alignment} gap-3 ${alignment === 'justify-end' ? 'ml-28' : 'mr-28'}`}>
+    <div className={`flex ${alignment} gap-3 ${alignment === 'justify-end' ? 'ml-16' : 'mr-16'}`}>
       {sender && <img src="https://placehold.co/20x20" alt="" className="w-8 h-8 rounded-full" />}
       <div className="flex flex-col items-start gap-1.5">
         {message.map((text, idx) => (
@@ -44,7 +44,7 @@ const SampleChat = () => {
             <IconButton Icon={HiInformationCircle} />
           </div>
         </div>
-        <div className="w-full flex-1 p-7 flex gap-3 flex-col justify-between">
+        <div className="w-full flex-1 p-7 flex gap-12 flex-col justify-between">
           <div className="flex flex-col items-center gap-4">
             <img src="https://placehold.co/60x60" alt="" className="w-24 h-24 rounded-full" />
             <div className="flex flex-col items-center gap-1">

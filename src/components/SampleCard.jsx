@@ -41,7 +41,7 @@ const SampleCard = () => {
         <div>
           <img src="https://placehold.co/600x300" alt="" className='w-full h-full rounded-md object-cover' />
         </div>
-        <div className='space-y-5 px-4 pt-4'>
+        <div className='space-y-5 px-4 py-4'>
           <div className='flex gap-1.5 flex-wrap'>
             {tags.map((tag, index) => (
               <span key={index} className="whitespace-nowrap rounded-full border border-neutral-300 bg-neutral-100 px-2.5 py-1 text-sm text-zinc-800">

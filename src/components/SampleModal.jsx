@@ -11,7 +11,7 @@ const SampleModal = () => {
       options={{ max: 15, scale: 1.02, speed: 400 }}
       style={{ height: '100%', width: '100%' }}
     >
-      <div className='rounded-md border border-neutral-400/30 shadow-xl w-full h-full flex flex-col justify-between p-7'>
+      <div className='rounded-md border border-neutral-400/30 shadow-xl w-full h-full space-y-5 p-7'>
         <div className='flex justify-between items-center'>
           <div className='flex gap-3'>
             <TbTransferVertical className='w-5 h-auto' />
