@@ -23,12 +23,12 @@ const Tab = ({ previewContent, codeSnippet, label }) => {
 
   return (
     <>
-      <div className='flex justify-between items-end'>
-        <h2 className='text-[1.5rem] leading-none font-medium'>{label}</h2>
+      <div className='flex justify-between gap-2 items-end'>
+        <h2 className='md:text-[1.5rem] text-[1.2rem] leading-none font-medium'>{label}</h2>
         <div className='space-x-2 flex'>
           <div className='inline-flex p-1.5 border border-neutral-400/40 gap-2 rounded-[0.4rem]'>
             <motion.button
-              className={`inline-flex justify-center items-center gap-2.5 px-4 py-2 rounded-md ${activeTab === 'preview' ? 'text-zinc-200 bg-neutral-700 font-medium' : 'text-zinc-600 bg-neutral-200 hover:bg-neutral-400/40 transition duration-300 ease-in-out'
+              className={`inline-flex text-sm justify-center items-center gap-2.5 px-4 py-2 rounded-md ${activeTab === 'preview' ? 'text-zinc-200 bg-neutral-700 font-medium' : 'text-zinc-600 bg-neutral-200 hover:bg-neutral-400/40 transition duration-300 ease-in-out'
                 }`}
               onClick={() => setActiveTab('preview')}
               whileTap={{ scale: 0.95 }}
@@ -37,7 +37,7 @@ const Tab = ({ previewContent, codeSnippet, label }) => {
               Preview
             </motion.button>
             <motion.button
-              className={`inline-flex justify-center items-center gap-2.5 px-4 py-2 rounded-md ${activeTab === 'code' ? 'text-zinc-200 bg-neutral-700 font-medium' : 'text-zinc-600 bg-neutral-200 hover:bg-neutral-400/40 transition duration-300 ease-in-out'
+              className={`inline-flex text-sm justify-center items-center gap-2.5 px-4 py-2 rounded-md ${activeTab === 'code' ? 'text-zinc-200 bg-neutral-700 font-medium' : 'text-zinc-600 bg-neutral-200 hover:bg-neutral-400/40 transition duration-300 ease-in-out'
                 }`}
               onClick={() => setActiveTab('code')}
               whileTap={{ scale: 0.95 }}

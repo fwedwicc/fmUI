@@ -41,21 +41,21 @@ const SampleCard = () => {
         <div>
           <img src="https://placehold.co/600x300" alt="" className='w-full h-full rounded-md object-cover' />
         </div>
-        <div className='space-y-4 px-4 pt-4'>
+        <div className='space-y-5 px-4 pt-4'>
           <div className='flex gap-1.5 flex-wrap'>
             {tags.map((tag, index) => (
-              <span key={index} className="whitespace-nowrap rounded-full border border-neutral-300 bg-neutral-100 px-2.5 py-1.5 text-sm text-zinc-800">
+              <span key={index} className="whitespace-nowrap rounded-full border border-neutral-300 bg-neutral-100 px-2.5 py-1 text-sm text-zinc-800">
                 {tag}
               </span>
             ))}
           </div>
-          <div className='space-y-2'>
+          <div className='space-y-1.5'>
             <div className='flex justify-between items-center'>
-              <h1 className='text-[1.5rem]'>Card Title</h1>
-              <h1 className='text-[1.5rem]'>$1099.00</h1>
+              <h1 className='text-[1.3rem]'>Card Title</h1>
+              <h1 className='text-[1.3rem]'>$1099.00</h1>
             </div>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus aperiam sint rerum accusantium.</p>
-            <div className='flex gap-4 items-center pt-2'>
+            <div className='flex gap-3 items-center pt-2'>
               <div className='flex'>
                 {imageUrls.map((url, index) => (
                   <img
@@ -66,13 +66,13 @@ const SampleCard = () => {
                   />
                 ))}
               </div>
-              <span>Join 867+ members</span>
+              <span className='text-xs'>Join 867+ members</span>
             </div>
             <div className="flex items-center pt-3">
               {stars.map((star, index) => (
                 <StarIcon key={index} color={star.color} />
               ))}
-              <span className='ms-1 text-sm font-medium text-neutral-700'>4.95 out of 5</span>
+              <span className='ms-1 text-xs font-medium text-neutral-700'>4.95 out of 5</span>
             </div>
           </div>
         </div>

@@ -12,11 +12,11 @@ const Home = () => {
     >
       <Navbar />
       <div className='pt-[4.5rem] px-[0.8rem]'>
-        <div className='bg-white border border-neutral-300/40 py-12 px-24 rounded-[1rem] flex flex-col'>
+        <div className='bg-white border border-neutral-300/40 py-12 lg:px-16 md:px-12 px-4 rounded-[1rem] flex flex-col'>
           {/* Rendered Hero */}
           <Hero />
           {/* Interface Overview */}
-          <div className='grid grid-cols-3 grid-rows-4 mt-12'>
+          <div className='grid lg:grid-cols-3 grid-cols-1 grid-rows-4 mt-12'>
             <div className='col-span-1 row-span-2 pr-2.5 pb-2.5'>
               <SampleCard />
             </div>

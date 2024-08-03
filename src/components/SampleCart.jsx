@@ -14,10 +14,10 @@ const SampleCart = () => {
       <div className='rounded-md border w-full h-full border-neutral-400/30 shadow-xl flex flex-col justify-between p-7'>
         <div className='flex justify-between items-center'>
           <div className='flex gap-3'>
-            <HiShoppingBag className='w-6 h-auto' />
-            <h2 className='font-medium text-[1.3rem]'>Shopping Cart</h2>
+            <HiShoppingBag className='w-5 h-auto' />
+            <h2 className='font-medium text-[1.1rem]'>Shopping Cart</h2>
           </div>
-          <button className='w-[2.5rem] h-[2.5rem] flex justify-center items-center transition duration-300 ease-in-out hover:bg-neutral-200/40 rounded-md focus:ring-2 focus:ring-neutral-200'>
+          <button className='w-[2rem] h-[2rem] flex justify-center items-center transition duration-300 ease-in-out hover:bg-neutral-200/40 rounded-md focus:ring-2 focus:ring-neutral-200'>
             <IoIosClose className='w-6 h-auto' />
           </button>
         </div>

@@ -11,7 +11,7 @@ const SampleLogin = () => {
       <input
         type={type}
         placeholder={placeholder}
-        className="h-11 rounded-md w-full bg-neutral-100 border border-neutral-200 transition duration-300 ease-in-out focus:ring-1 focus:ring-neutral-500 focus:border-neutral-500 text-sm px-4"
+        className="h-10 rounded-md w-full bg-neutral-100 border border-neutral-200 transition duration-300 ease-in-out focus:ring-1 focus:ring-neutral-500 focus:border-neutral-500 text-sm px-4"
       />
     </div>
   );
@@ -39,7 +39,7 @@ const SampleLogin = () => {
                 <input
                   type="password"
                   placeholder="•••••••••••"
-                  className="h-11 pr-10 rounded-md w-full bg-neutral-100 border border-neutral-200 transition duration-300 ease-in-out focus:ring-neutral-500 focus:border-neutral-500 text-sm px-4"
+                  className="h-10 pr-10 rounded-md w-full bg-neutral-100 border border-neutral-200 transition duration-300 ease-in-out focus:ring-neutral-500 focus:border-neutral-500 text-sm px-4"
                 />
                 <button className="absolute top-1/2 right-0 transform -translate-y-1/2 h-full px-2 rounded-full">
                   <HiEyeOff className="w-4 h-auto text-neutral-400" />
@@ -55,7 +55,7 @@ const SampleLogin = () => {
             </div>
           </div>
           <div className="flex flex-col gap-6">
-            <button className="w-full py-2 text-zinc-100 hover:bg-neutral-900/90 transition duration-300 ease-in-out bg-neutral-700 border border-neutral-900 font-medium rounded-md focus:ring-2 focus:ring-neutral-400">
+            <button className="w-full py-2 text-sm text-zinc-100 hover:bg-neutral-900/90 transition duration-300 ease-in-out bg-neutral-700 border border-neutral-900 font-medium rounded-md focus:ring-2 focus:ring-neutral-400">
               Sign in
             </button>
             <span className="text-sm text-center">Don't have an account? <span className="ml-1 underline font-semibold cursor-pointer">Request a free trial</span></span>
