@@ -1,3 +1,6 @@
+// ------------- Thumbnail Imports -------------
+import { alertThumbnail, avatarThumbnail, badgeThumbnail } from '../assets/thumbnails';
+
 // ------------- Component Imports -------------
 // Alert Imports
 import {
@@ -109,7 +112,7 @@ import {
 export const elementsData = {
   // Alert Component Data
   alert: {
-    cardImage: "https://img.daisyui.com/images/components/alert.webp",
+    cardImage: alertThumbnail,
     ImageAlt: "Alert Illustration",
     cardTitle: "Alert",
     cardDescription: "Alert inform users about important events.",
@@ -124,6 +127,8 @@ export const elementsData = {
   },
   // Avatar Component Data
   avatar: {
+    cardImage: avatarThumbnail,
+    ImageAlt: "Avatar Illustration",
     cardTitle: "Avatar",
     cardDescription: "Avatars visually represent users with images or icons.",
     title: 'Avatar Components',
@@ -138,6 +143,8 @@ export const elementsData = {
   },
   // Badge Component Data
   badge: {
+    cardImage: badgeThumbnail,
+    ImageAlt: "Badge Illustration",
     cardTitle: "Badge",
     cardDescription: "Badge are used to inform the user of the status of specific data.",
     title: 'Badge Components',
