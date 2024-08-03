@@ -41,22 +41,22 @@ const Home = () => {
           </div> */}
           <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-12'>
             <div className='col-span-1 self-start'>
-              <div className='pr-2.5 pb-2.5'>
+              <div className='md:pr-2.5 pb-2.5 md:border-r'>
                 <SampleCard />
               </div>
-              <div className='pr-2.5 pt-2.5 pb-2.5 border-t border-b'>
+              <div className='md:pr-2.5 pt-2.5 pb-2.5 md:border-b-0 border-b border-t md:border-r'>
                 <SampleCart />
               </div>
             </div>
-            <div className='col-span-1 border-b self-start'>
-              <div className='pb-2.5 lg:px-2.5 pl-2.5 border-l border-b self-start'>
+            <div className='col-span-1 self-start'>
+              <div className='pb-2.5 md:pt-0 pt-2.5 lg:px-2.5 md:pl-2.5 lg:border-r border-b self-start'>
                 <SampleModal />
               </div>
-              <div className='lg:p-2.5 py-2.5 pl-2.5 border-l border-b self-start'>
+              <div className='lg:p-2.5 py-2.5 md:pl-2.5 border-b md:border-b-0 lg:border-r self-start'>
                 <SampleLogin />
               </div>
             </div>
-            <div className='col-span-1 border-l border-b pl-2.5 pb-2.5 self-start'>
+            <div className='lg:block md:hidden block col-span-1 border-b lg:border-b-0 md:pt-0 pt-2.5 md:pl-2.5 pb-2.5 self-start'>
               <SampleChat />
             </div>
           </div>
