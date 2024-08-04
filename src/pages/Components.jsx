@@ -18,7 +18,7 @@ const Components = () => {
             {/* Rendered Elements */}
             <div className='space-y-6'>
               <h1 className='text-[2.5rem] leading-none font-semibold'>Components</h1>
-              <div className='grid lg:grid-cols-3 grid-cols-2 gap-4'>
+              <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4'>
                 {Object.keys(elementsData).map(key => (
                   <Card
                     key={key}
@@ -36,7 +36,7 @@ const Components = () => {
             {/* Rendered Templates */}
             <div className='space-y-6'>
               <h1 className='text-[2.5rem] leading-none font-semibold'>Templates</h1>
-              <div className='grid lg:grid-cols-3 grid-cols-2 gap-4'>
+              <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4'>
                 {Object.keys(templatesData).map(key => (
                   <Card
                     key={key}
