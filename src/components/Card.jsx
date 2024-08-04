@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Card = ({ img, alt, thumbnail, link, title, desc, numOfComps }) => {
   return (
     <Link to={link}>
-      <div className='border w-full h-full md:p-4 p-3.5 rounded-md space-y-4 hover:shadow-lg transition duration-300 ease-in-out'>
+      <div className='border w-full h-full md:p-4 p-3.5 rounded-xl space-y-4 hover:shadow-lg transition duration-300 ease-in-out'>
         {thumbnail ? (
           <div className='md:h-[10rem] h-[6rem] w-full'>
             <img src={img} alt={alt} className='object-cover h-full w-full rounded-[4px]' />

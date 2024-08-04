@@ -12,12 +12,12 @@ Then, include the plugin in your Tailwind CSS configuration file (tailwind.confi
 <!-- Default Input Field -->
 <div>
   <label for="default-input" class="mb-1.5 block text-sm font-medium text-zinc-800">Default</label>
-  <input id="default-input" type="text" class="block w-full rounded-md border border-neutral-200 bg-neutral-100/80 px-3 py-2.5 text-sm transition duration-300 ease-in-out focus:border-neutral-500 focus:ring-1 focus:ring-neutral-500" placeholder="Default Input" required />
+  <input id="default-input" type="text" class="block w-full rounded-md border border-neutral-200 bg-neutral-100/80 px-3 py-2 text-sm transition duration-300 ease-in-out focus:border-neutral-500 focus:ring-1 focus:ring-neutral-500" placeholder="Default Input" required />
 </div>
 <!-- Large Input Field -->
 <div>
   <label for="large-input" class="mb-1.5 block text-sm font-medium text-zinc-800">Large</label>
-  <input id="large-input" type="text" class="block w-full rounded-md border border-neutral-200 bg-neutral-100/80 px-4 py-3 text-md transition duration-300 ease-in-out focus:border-neutral-500 focus:ring-1 focus:ring-neutral-500" placeholder="Large Input" required />
+  <input id="large-input" type="text" class="block w-full rounded-md border border-neutral-200 bg-neutral-100/80 px-4 py-2 text-md transition duration-300 ease-in-out focus:border-neutral-500 focus:ring-1 focus:ring-neutral-500" placeholder="Large Input" required />
 </div>
 `;
 
@@ -33,12 +33,12 @@ const Inputs04 = () => {
         {/* Default Input Field */}
         <div>
           <label htmlFor='default-input' className="block text-sm font-medium text-zinc-800 mb-1.5">Default</label>
-          <input id='default-input' type="text" className="block rounded-md w-full bg-neutral-100/80 border border-neutral-200 transition duration-300 ease-in-out focus:ring-1 focus:ring-neutral-500 focus:border-neutral-500 text-sm py-2.5 px-3" placeholder="Default Input" required />
+          <input id='default-input' type="text" className="block rounded-md w-full bg-neutral-100/80 border border-neutral-200 transition duration-300 ease-in-out focus:ring-1 focus:ring-neutral-500 focus:border-neutral-500 text-sm py-2 px-3" placeholder="Default Input" required />
         </div>
         {/* Large Input Field */}
         <div>
           <label htmlFor='large-input' className="block text-sm font-medium text-zinc-800 mb-1.5">Large</label>
-          <input id='large-input' type="text" className="block rounded-md w-full bg-neutral-100/80 border border-neutral-200 transition duration-300 ease-in-out focus:ring-1 focus:ring-neutral-500 focus:border-neutral-500 text-md py-3 px-4" placeholder="Large Input" required />
+          <input id='large-input' type="text" className="block rounded-md w-full bg-neutral-100/80 border border-neutral-200 transition duration-300 ease-in-out focus:ring-1 focus:ring-neutral-500 focus:border-neutral-500 text-md py-2 px-4" placeholder="Large Input" required />
         </div>
       </div>
     </div>
