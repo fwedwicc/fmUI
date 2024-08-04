@@ -9,7 +9,7 @@ Then, include the plugin in your Tailwind CSS configuration file (tailwind.confi
   <form class="flex w-full max-w-md flex-col items-center justify-center rounded-lg p-10 shadow-xl">
     <div class="w-full space-y-8">
       <div class="flex flex-col items-center gap-5">
-        <img src="/path/to/your/image" alt="Your Logo" class="h-auto w-16" />
+        <img src="https://github.com/fwedwicc/fmUI/blob/main/src/assets/fmUI-logo.png?raw=true" alt="Your Logo" class="h-auto w-16" />
         <div class="flex flex-col items-center gap-1">
           <h1 class="text-[1.6rem] font-bold leading-none text-zinc-700">Welcome back!</h1>
           <span class="text-sm text-zinc-700">Please enter your credentials</span>
@@ -19,7 +19,7 @@ Then, include the plugin in your Tailwind CSS configuration file (tailwind.confi
         <div class="flex flex-col gap-2">
           <span class="text-sm font-medium text-zinc-700">Email Address</span>
           <input type="email" placeholder="john@email.com"
-            class="h-10 w-full rounded-md border border-neutral-200 bg-neutral-100 px-4 text-sm transition duration-300 ease-in-out focus:border-neutral-500 focus:ring-2 focus:ring-neutral-500" />
+            class="h-10 w-full rounded-md border border-neutral-200 bg-neutral-100 px-4 text-sm transition duration-300 ease-in-out focus:border-neutral-500 focus:ring-neutral-500" />
         </div>
         <div class="flex flex-col gap-2">
           <span class="text-sm font-medium text-zinc-700">Password</span>
@@ -41,7 +41,7 @@ Then, include the plugin in your Tailwind CSS configuration file (tailwind.confi
           <div class="flex justify-between">
             <div class="flex items-center">
               <input id="remember-checkbox" type="checkbox"
-                class="cursor-pointer rounded border border-neutral-200 bg-neutral-100 text-neutral-700 transition duration-300 ease-in-out focus:ring-1 focus:ring-neutral-700" />
+                class="cursor-pointer rounded border border-neutral-200 bg-neutral-100 text-neutral-700 transition duration-300 ease-in-out focus:ring-2 focus:ring-neutral-700" />
               <label for="remember-checkbox" class="ms-2 text-sm font-medium text-zinc-700">Remember password</label>
             </div>
             <span class="cursor-pointer text-sm font-semibold text-zinc-700 underline">Forgot password</span>

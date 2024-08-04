@@ -9,7 +9,7 @@ Then, include the plugin in your Tailwind CSS configuration file (tailwind.confi
   <form class="flex w-full max-w-xl flex-col items-center justify-center rounded-lg p-10 shadow-xl">
     <div class="w-full space-y-8">
       <div class="flex flex-col items-start gap-7">
-        <img src="../assets/fmUI-logo.png" alt="fmUI Logo" class="h-auto w-12" />
+        <img src="https://github.com/fwedwicc/fmUI/blob/main/src/assets/fmUI-logo.png?raw=true" alt="fmUI Logo" class="h-auto w-12" />
         <div class="flex flex-col items-start gap-4">
           <h1 class="text-[1.8rem] font-bold leading-none text-zinc-700">Welcome to fmUI!</h1>
           <span class="text-sm text-zinc-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam dolorum aliquam, quibusdam aperiam voluptatum.</span>
@@ -53,7 +53,7 @@ Then, include the plugin in your Tailwind CSS configuration file (tailwind.confi
 const AuthPage02 = () => {
   return (
     <div className='w-full h-auto p-2'>
-      <section className="flex lg:h-screen h-[120vh] items-center justify-center">
+      <section className="flex lg:h-screen h-auto items-center justify-center">
         <form className="flex w-full max-w-xl flex-col items-center justify-center rounded-lg p-10 shadow-xl">
           <div className="w-full space-y-8">
             <div className="flex flex-col items-start gap-7">
