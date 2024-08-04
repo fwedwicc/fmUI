@@ -6,7 +6,7 @@ To use this plugin, install it via npm by running 'npm install @tailwindcss/form
 Then, include the plugin in your Tailwind CSS configuration file (tailwind.config.js) by adding 'require('@tailwindcss/forms')' to the plugins array. -->
 
 <section class="flex lg:h-screen h-[120vh] items-center justify-center">
-  <form class="flex w-full max-w-xl flex-col items-center justify-center rounded-md p-10 shadow-xl">
+  <form class="flex w-full max-w-xl flex-col items-center justify-center rounded-lg p-10 shadow-xl">
     <div class="w-full space-y-8">
       <div class="flex flex-col items-start gap-7">
         <img src="../assets/fmUI-logo.png" alt="fmUI Logo" class="h-auto w-12" />
@@ -38,11 +38,11 @@ Then, include the plugin in your Tailwind CSS configuration file (tailwind.confi
         </div>
       </div>
       <div>
-        <input id="subscription-checkbox" type="checkbox" class="cursor-pointer rounded border border-neutral-200 bg-neutral-100 text-neutral-700 transition duration-300 ease-in-out focus:ring-1 focus:ring-neutral-700" />
+        <input id="subscription-checkbox" type="checkbox" class="cursor-pointer rounded border border-neutral-200 bg-neutral-100 text-neutral-700 transition duration-300 ease-in-out focus:ring-2 focus:ring-neutral-700" />
         <label for="subscription-checkbox" class="ms-2 text-sm text-zinc-700">I want to receive emails about events, product updates and company announcements.</label>
       </div>
       <div class="flex flex-col gap-6">
-        <button class="w-full rounded-md border border-neutral-900 bg-neutral-700 py-2 font-medium text-zinc-100 transition duration-300 ease-in-out hover:bg-neutral-900/90 focus:ring-2 focus:ring-neutral-400">Create account</button>
+        <button class="w-full rounded-md border border-neutral-900 bg-neutral-700 py-2 font-medium text-sm text-zinc-100 transition duration-300 ease-in-out hover:bg-neutral-900/90 focus:ring-2 focus:ring-neutral-400">Create account</button>
         <span class="text-center text-sm text-zinc-700">Already have an account? <span class="ml-1 cursor-pointer font-semibold text-zinc-700 underline">Login</span></span>
       </div>
     </div>
@@ -54,7 +54,7 @@ const AuthPage02 = () => {
   return (
     <div className='w-full h-auto p-2'>
       <section className="flex lg:h-screen h-[120vh] items-center justify-center">
-        <form className="flex w-full max-w-xl flex-col items-center justify-center rounded-md p-10 shadow-xl">
+        <form className="flex w-full max-w-xl flex-col items-center justify-center rounded-lg p-10 shadow-xl">
           <div className="w-full space-y-8">
             <div className="flex flex-col items-start gap-7">
               <img src={fmUILogo} alt="fmUI Logo" className="h-auto w-12" />
@@ -86,11 +86,11 @@ const AuthPage02 = () => {
               </div>
             </div>
             <div>
-              <input id="subscription-checkbox" type="checkbox" className="cursor-pointer rounded border border-neutral-200 bg-neutral-100 text-neutral-700 transition duration-300 ease-in-out focus:ring-1 focus:ring-neutral-700" />
+              <input id="subscription-checkbox" type="checkbox" className="cursor-pointer rounded border border-neutral-200 bg-neutral-100 text-neutral-700 transition duration-300 ease-in-out focus:ring-2 focus:ring-neutral-700" />
               <label htmlFor="subscription-checkbox" className="ms-2 text-sm text-zinc-700">I want to receive emails about events, product updates and company announcements.</label>
             </div>
             <div className="flex flex-col gap-6">
-              <button className="w-full rounded-md border border-neutral-900 bg-neutral-700 py-2 font-medium text-zinc-100 transition duration-300 ease-in-out hover:bg-neutral-900/90 focus:ring-2 focus:ring-neutral-400">Create account</button>
+              <button className="w-full rounded-md border border-neutral-900 bg-neutral-700 py-2 font-medium text-sm text-zinc-100 transition duration-300 ease-in-out hover:bg-neutral-900/90 focus:ring-2 focus:ring-neutral-400">Create account</button>
               <span className="text-center text-sm text-zinc-700">Already have an account? <span className="ml-1 cursor-pointer font-semibold text-zinc-700 underline">Login</span></span>
             </div>
           </div>

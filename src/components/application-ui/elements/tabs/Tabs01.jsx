@@ -10,7 +10,7 @@ export const codeSnippet = `<ul class="flex flex-wrap border-b border-neutral-20
   <li class="me-2">
     <a href="#" class="inline-block rounded-t-lg px-4 py-2.5 transition duration-300 ease-in-out hover:bg-gray-50">Settings</a>
   </li>
-  <li class="me-2">
+  <li>
     <a href="#" class="inline-block rounded-t-lg px-4 py-2.5 transition duration-300 ease-in-out hover:bg-gray-50">Contacts</a>
   </li>
 </ul>
@@ -29,7 +29,7 @@ const Tabs01 = () => {
         <li className="me-2">
           <a href="#" className="inline-block px-4 py-2.5 rounded-t-lg hover:bg-gray-50 transition duration-300 ease-in-out">Settings</a>
         </li>
-        <li className="me-2">
+        <li>
           <a href="#" className="inline-block px-4 py-2.5 rounded-t-lg hover:bg-gray-50 transition duration-300 ease-in-out">Contacts</a>
         </li>
       </ul>

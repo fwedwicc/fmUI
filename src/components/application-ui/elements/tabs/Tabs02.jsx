@@ -11,7 +11,7 @@ export const codeSnippet = `<div class="border-b border-neutral-200 text-center 
     <li class="me-2">
       <a href="#" class="inline-block rounded-t-lg border-b border-transparent px-4 py-2.5 transition duration-300 ease-in-out hover:border-neutral-300 hover:text-neutral-700">Settings</a>
     </li>
-    <li class="me-2">
+    <li>
       <a href="#" class="inline-block rounded-t-lg border-b border-transparent px-4 py-2.5 transition duration-300 ease-in-out hover:border-neutral-300 hover:text-neutral-700">Contacts</a>
     </li>
   </ul>
@@ -32,7 +32,7 @@ const Tabs02 = () => {
           <li className="me-2">
             <a href="#" className="inline-block px-4 py-2.5 border-b border-transparent rounded-t-lg hover:text-neutral-700 hover:border-neutral-300 transition duration-300 ease-in-out">Settings</a>
           </li>
-          <li className="me-2">
+          <li>
             <a href="#" className="inline-block px-4 py-2.5 border-b border-transparent rounded-t-lg hover:text-neutral-700 hover:border-neutral-300 transition duration-300 ease-in-out">Contacts</a>
           </li>
         </ul>
