@@ -44,33 +44,34 @@ const Navbar = () => {
 
   // To get the current path/loc
   const getPageName = () => {
+    const basePath = '/fmUI'; // Your base path
     const path = location.pathname;
-    const fullPath = `/fmUI/${path}`;
+    const fullPath = path.startsWith(basePath) ? path : `${basePath}${path}`;
 
     switch (fullPath) {
       // Components
-      case '/fmUI/components/alert':
+      case `${basePath}/components/alert`:
         return 'Alerts';
-      case '/fmUI/components/avatar':
+      case `${basePath}/components/avatar`:
         return 'Avatars';
-      case '/fmUI/components/badge':
+      case `${basePath}/components/badge`:
         return 'Badges';
-      case '/fmUI/components/breadcrumbs':
+      case `${basePath}/components/breadcrumbs`:
         return 'Breadcrumbs';
-      case '/fmUI/components/button':
+      case `${basePath}/components/button`:
         return 'Buttons';
-      case '/fmUI/components/checkbox':
+      case `${basePath}/components/checkbox`:
         return 'Checkboxes';
-      case '/fmUI/components/inputField':
+      case `${basePath}/components/inputField`:
         return 'Input Fields';
-      case '/fmUI/components/radio':
+      case `${basePath}/components/radio`:
         return 'Radio';
-      case '/fmUI/components/tab':
+      case `${basePath}/components/tab`:
         return 'Tab';
-      case '/fmUI/components/toggle':
+      case `${basePath}/components/toggle`:
         return 'Toggles';
       // Templates
-      case '/fmUI/components/authPage':
+      case `${basePath}/components/authPage`:
         return 'Auth Pages';
       default:
         return <HiHeart />;
