@@ -44,7 +44,10 @@ const Navbar = () => {
 
   // To get the current path/loc
   const getPageName = () => {
-    switch (/fmUI/location.pathname) {
+    const path = location.pathname;
+    const fullPath = `/fmUI/${path}`;
+
+    switch (fullPath) {
       // Components
       case '/fmUI/components/alert':
         return 'Alerts';
