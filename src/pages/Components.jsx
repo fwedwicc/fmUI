@@ -22,7 +22,7 @@ const Components = () => {
                 {Object.keys(elementsData).map(key => (
                   <Card
                     key={key}
-                    link={`/components/${key}`}
+                    link={`/fmUI/components/${key}`}
                     thumbnail={true}
                     img={elementsData[key].cardImage}
                     alt={elementsData[key].ImageAlt}
@@ -40,7 +40,7 @@ const Components = () => {
                 {Object.keys(templatesData).map(key => (
                   <Card
                     key={key}
-                    link={`/components/${key}`}
+                    link={`/fmUI/components/${key}`}
                     title={templatesData[key].cardTitle}
                     desc={templatesData[key].cardDescription}
                     numOfComps={templatesData[key].tabs.length}
