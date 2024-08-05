@@ -30,14 +30,14 @@ const Navbar = () => {
 
   // Active/inactive link styles
   function linkClasses(path) {
-    return (location.pathname === path || (path === '/fmUI/home' && location.pathname === '/fmUI'))
+    return (location.pathname === path || (path === '/home' && location.pathname === '/'))
       ? 'inline-flex gap-2 items-center px-2.5 py-1.5 active:scale-95 transition duration-300 ease-in-out text-zinc-100 hover:bg-neutral-900/90 border border-neutral-900 bg-neutral-700 font-medium rounded-md text-sm'
       : 'inline-flex gap-2 items-center px-2.5 py-1.5 active:scale-95 transition duration-300 ease-in-out text-zinc-600 bg-neutral-200 border border-neutral-300 hover:bg-neutral-400/40 font-medium rounded-md text-sm';
   }
 
   // Active/inactive span style
   const spanClasses = () => {
-    return location.pathname.startsWith('/fmUI/components')
+    return location.pathname.startsWith('/components/')
       ? 'inline-flex gap-2 items-center px-2.5 py-1.5 text-zinc-100 border border-neutral-900 bg-neutral-700 font-medium rounded-md text-sm'
       : 'inline-flex gap-2 items-center px-2.5 py-1.5 text-zinc-600 bg-neutral-200 border border-neutral-300 font-medium rounded-md text-sm';
   };
@@ -46,28 +46,28 @@ const Navbar = () => {
   const getPageName = () => {
     switch (location.pathname) {
       // Components
-      case '/fmUI/components/alert':
+      case '/components/alert':
         return 'Alerts';
-      case '/fmUI/components/avatar':
+      case '/components/avatar':
         return 'Avatars';
-      case '/fmUI/components/badge':
+      case '/components/badge':
         return 'Badges';
-      case '/fmUI/components/breadcrumbs':
+      case '/components/breadcrumbs':
         return 'Breadcrumbs';
-      case '/fmUI/components/button':
+      case '/components/button':
         return 'Buttons';
-      case '/fmUI/components/checkbox':
+      case '/components/checkbox':
         return 'Checkboxes';
-      case '/fmUI/components/inputField':
+      case '/components/inputField':
         return 'Input Fields';
-      case '/fmUI/components/radio':
+      case '/components/radio':
         return 'Radio';
-      case '/fmUI/components/tab':
+      case '/components/tab':
         return 'Tab';
-      case '/fmUI/components/toggle':
+      case '/components/toggle':
         return 'Toggles';
       // Templates
-      case '/fmUI/components/authPage':
+      case '/components/authPage':
         return 'Auth Pages';
       default:
         return <HiHeart />;
@@ -76,16 +76,16 @@ const Navbar = () => {
 
   return (
     <div className={`fixed flex w-full h-[4.5rem] justify-between items-center lg:px-[7rem] md:px-[4rem] px-7 backdrop-blur-md bg-neutral-50/60 z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
-      <Link to='/fmUI/home'>
+      <Link to='/home'>
         <img src={fmUILogo} alt="fmUI Logo" className='w-auto lg:h-7 md:h-7 h-5' />
       </Link>
       <div className='flex gap-1.5 border p-1.5 rounded-lg items-center'>
-        <Link className={linkClasses('/fmUI/home')} to='/fmUI/home'>
+        <Link className={linkClasses('/home')} to='/home'>
           <HiHome />
           Home
         </Link>
         <HiChevronRight />
-        <Link className={linkClasses('/fmUI/components')} to='/fmUI/components'>
+        <Link className={linkClasses('/components')} to='/components'>
           <HiCollection />
           Components
         </Link>
