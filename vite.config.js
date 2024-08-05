@@ -5,9 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: "/fmUI/",
-  server: {
-    historyApiFallback: true
-  },
   build: {
     rollupOptions: {
       input: {
