@@ -3,33 +3,31 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from './pages/Home';
-import Components from './pages/Components';
-import ComponentOverview from './pages/ComponentOverview';
+import { Home, Components, ComponentOverview } from './pages'
 
 const router = createBrowserRouter(
   [
     {
-      path: "/fmUI/",
-      element: <Home />,
+      path: "/",
+      element: <App />, // Render the App component as the base route
       children: [
         {
-          path: "/fmUI/home",
+          path: "home",
           element: <Home />,
         },
         {
-          path: "/fmUI/components",
+          path: "components",
           element: <Components />,
         },
         {
-          path: "/fmUI/components/:type",
+          path: "components/:type",
           element: <ComponentOverview />,
         },
       ],
     },
   ],
   {
-    basename: import.meta.env.BASE_URL,
+    basename: import.meta.env.BASE_URL, // This ensures the base URL is correctly handled
   }
 );
 
