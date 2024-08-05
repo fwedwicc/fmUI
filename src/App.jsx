@@ -1,20 +1,39 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { Outlet } from 'react-router-dom';
-import useLenisScroll from './hooks/useLenisScroll';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import './index.css';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from './pages/Home';
+import Components from './pages/Components';
+import ComponentOverview from './pages/ComponentOverview';
 
-const App = () => {
-  useLenisScroll();
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <Outlet />
-    </motion.div>
-  );
-};
+const router = createBrowserRouter([
+  {
+    path: "/fmUI/",
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "home",
+        element: <Home />,
+      },
+      {
+        path: "components",
+        element: <Components />,
+      },
+      {
+        path: "components/:type",
+        element: <ComponentOverview />,
+      },
+    ],
+  },
+]);
 
-export default App;
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>,
+);
