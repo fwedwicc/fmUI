@@ -17,7 +17,6 @@ const App = () => {
     >
       <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
-          {/* TODO: Add basenames */}
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/components" element={<Components />} />
