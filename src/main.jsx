@@ -13,21 +13,24 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/fmUI/home",
+        index: true,
         element: <Home />,
       },
       {
-        path: "/fmUI/components",
+        path: "home",
+        element: <Home />,
+      },
+      {
+        path: "components",
         element: <Components />,
       },
       {
-        path: "/fmUI/components/:type",
+        path: "components/:type",
         element: <ComponentOverview />,
       },
     ],
   },
-],
-);
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
