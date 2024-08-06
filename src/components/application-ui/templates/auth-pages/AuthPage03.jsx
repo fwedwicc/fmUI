@@ -12,8 +12,8 @@ Then, include the plugin in your Tailwind CSS configuration file (tailwind.confi
       <span class="text-sm text-zinc-300">fmUI is a comprehensive collection of free Tailwind CSS components and templates for your projects. With diverse components and sample pages, you can develop websites, web apps, and more. Explore our selection to enhance your development process with ease and flexibility.</span>
     </div>
   </aside>
-  <main class="flex h-screen items-center justify-center">
-    <form class="flex w-full max-w-md flex-col items-center justify-center px-7">
+  <main class="flex lg:h-screen h-auto items-center justify-center">
+    <form class="flex w-full max-w-md flex-col items-center justify-center px-7 py-9">
       <div class="w-full space-y-8">
         <div class="flex flex-col items-center gap-9">
           <img src="https://github.com/fwedwicc/fmUI/blob/main/src/assets/fmUI-logo.png?raw=true" alt="Your Logo" class="h-auto w-20" />
@@ -75,8 +75,8 @@ const AuthPage03 = () => {
             </span>
           </div>
         </aside>
-        <main className="flex h-screen items-center justify-center">
-          <form className="flex w-full max-w-md flex-col items-center justify-center px-7">
+        <main className="flex lg:h-screen h-auto items-center justify-center">
+          <form className="flex w-full max-w-md flex-col items-center justify-center px-7 py-9">
             <div className="w-full space-y-8">
               <div className="flex flex-col items-center gap-9">
                 <img

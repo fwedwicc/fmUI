@@ -23,7 +23,7 @@ const Tab = ({ previewContent, codeSnippet, label }) => {
 
   return (
     <>
-      <div className='flex justify-between gap-2 items-end'>
+      <div className='flex md:flex-row flex-col md:justify-between md:items-end items-start justify-start gap-5'>
         <h2 className='md:text-[1.5rem] text-[1.2rem] leading-none font-medium'>{label}</h2>
         <div className='space-x-2 flex'>
           <div className='inline-flex p-1.5 border border-neutral-400/40 gap-2 rounded-[0.4rem]'>

@@ -5,7 +5,7 @@ export const codeSnippet = `<!-- This component requires the Tailwind CSS Forms 
 To use this plugin, install it via npm by running 'npm install @tailwindcss/forms'. 
 Then, include the plugin in your Tailwind CSS configuration file (tailwind.config.js) by adding 'require('@tailwindcss/forms')' to the plugins array. -->
 
-<section class="flex h-screen items-center justify-center">
+<section class="flex lg:h-screen h-auto items-center justify-center">
   <form class="flex w-full max-w-md flex-col items-center justify-center rounded-lg p-10 shadow-xl">
     <div class="w-full space-y-8">
       <div class="flex flex-col items-center gap-5">
@@ -63,7 +63,7 @@ Then, include the plugin in your Tailwind CSS configuration file (tailwind.confi
 const AuthPage01 = () => {
   return (
     <div className='w-full h-auto p-2'>
-      <section className="flex h-screen items-center justify-center">
+      <section className="flex lg:h-screen h-auto items-center justify-center">
         <form className="flex w-full max-w-md flex-col items-center justify-center rounded-lg p-10 shadow-xl">
           <div className="w-full space-y-8">
             <div className="flex flex-col items-center gap-5">
