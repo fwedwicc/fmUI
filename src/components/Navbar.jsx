@@ -3,9 +3,11 @@ import { fmUILogo } from '../assets';
 import { Link, useLocation } from 'react-router-dom';
 import { HiChevronRight, HiHome, HiCollection, HiHeart } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -64,6 +66,8 @@ const Navbar = () => {
         return 'Checkboxes';
       case `${basePath}/components/inputField`:
         return 'Input Fields';
+      case `${basePath}/components/navbar`:
+        return 'Navbar';
       case `${basePath}/components/radio`:
         return 'Radio';
       case `${basePath}/components/tab`:
@@ -74,7 +78,7 @@ const Navbar = () => {
       case `${basePath}/components/authPage`:
         return 'Auth Pages';
       default:
-        return <HiHeart />;
+        return <HiHeart className='w-[18px] h-auto' />;
     }
   };
 
@@ -83,7 +87,45 @@ const Navbar = () => {
       <Link to='/fmUI/home'>
         <img src={fmUILogo} alt="fmUI Logo" className='w-auto lg:h-7 md:h-7 h-5' />
       </Link>
-      <div className='flex gap-1.5 border p-1.5 rounded-lg items-center'>
+      {/* Mobile Menu Button */}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className='md:hidden py-2 size-8 flex justify-center items-center bg-neutral-200/50 backdrop-blur-sm hover:bg-neutral-300/70 rounded-md focus:ring-2 focus:ring-neutral-300 text-neutral-800 z-50 transition duration-300 ease-in-out'
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+        </svg>
+      </button>
+      {/* Mobile Dropdown Menu */}
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.3 }}
+          className='absolute top-full right-[27px] p-3 mt-4 w-52 bg-neutral-100 border border-neutral-200 rounded-lg shadow-lg md:hidden'>
+          <div className='w-full gap-3 flex flex-col justify-center items-center'>
+            <Link className={`${linkClasses('/fmUI/home')} w-full justify-center`} to='/fmUI/home'>
+              <HiHome />
+              Home
+            </Link>
+            <Link className={`${linkClasses('/fmUI/components')} w-full justify-center`} to='/fmUI/components'>
+              <HiCollection />
+              Components
+            </Link>
+            <span className={`${spanClasses()} w-full justify-center`}>
+              {getPageName()}
+            </span>
+          </div>
+          <div className='flex items-center gap-4 justify-center mt-5'>
+            <span className='text-sm font-bold'>v1.0</span>
+            <a href='https://github.com/fwedwicc/fmUI' target='_blank' rel='noopener noreferrer' className="block p-2 rounded-full transition duration-300 ease-in-out hover:bg-neutral-200 focus:ring-2 focus:ring-neutral-200">
+              <FaGithub className="w-5 h-auto" />
+            </a>
+          </div>
+        </motion.div>
+      )}
+      <div className='md:flex hidden gap-1.5 border p-1.5 rounded-lg items-center'>
         <Link className={linkClasses('/fmUI/home')} to='/fmUI/home'>
           <HiHome />
           Home
@@ -98,12 +140,12 @@ const Navbar = () => {
           {getPageName()}
         </span>
       </div>
-      <header className='lg:flex md:flex items-center gap-4 hidden'>
+      <div className='md:flex items-center gap-4 hidden'>
         <span className='text-sm font-bold'>v1.0</span>
         <a href='https://github.com/fwedwicc/fmUI' target='_blank' rel='noopener noreferrer' className="block p-2 rounded-full transition duration-300 ease-in-out hover:bg-neutral-200 focus:ring-2 focus:ring-neutral-200">
           <FaGithub className="w-5 h-auto" />
         </a>
-      </header>
+      </div>
     </div>
   );
 }
