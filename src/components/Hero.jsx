@@ -23,14 +23,14 @@ const Hero = () => {
           <p>fmUI is a comprehensive collection of free Tailwind CSS components and templates for your projects. With diverse components and sample pages, you can develop websites, web apps, and more. Explore our selection to enhance your development process with ease and flexibility.</p>
         </div>
         <div className='space-x-3'>
-          <Link to='/components'>
+          <Link to='/fmUI/components'>
             <button className='inline-flex text-sm gap-2.5 items-center px-4 py-2.5 text-zinc-100 hover:bg-neutral-900/90 transition duration-300 ease-in-out bg-neutral-700 border border-neutral-900 font-medium rounded-md'>
               Explore components
               <MdArrowOutward className='h-4 w-auto' />
             </button>
           </Link>
           <a href='https://github.com/fwedwicc/fmUI' target='_blank' rel='noopener noreferrer' className='inline-flex text-sm gap-2.5 items-center px-4 py-2.5 transition duration-300 ease-in-out text-zinc-600 bg-neutral-200 border border-neutral-300 hover:bg-neutral-400/40 font-medium rounded-md'>
-            View on GitHub
+            Star it on GitHub
             <FaGithub className='h-4 w-auto' />
           </a>
         </div>

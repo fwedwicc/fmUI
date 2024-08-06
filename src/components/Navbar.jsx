@@ -39,7 +39,7 @@ const Navbar = () => {
 
   // Active/inactive span style
   const spanClasses = () => {
-    return location.pathname.startsWith('/fmUI/components')
+    return location.pathname.startsWith('/fmUI/components/')
       ? 'inline-flex gap-2 items-center px-2.5 py-1.5 text-zinc-100 border border-neutral-900 bg-neutral-700 font-medium rounded-md text-sm'
       : 'inline-flex gap-2 items-center px-2.5 py-1.5 text-zinc-600 bg-neutral-200 border border-neutral-300 font-medium rounded-md text-sm';
   };
