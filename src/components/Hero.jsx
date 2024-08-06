@@ -37,21 +37,20 @@ const Hero = () => {
       </div>
       <div className='col-span-1 grid grid-cols-2 grid-rows-2'>
         <div className='col-span-1 row-span-1 bg-border-gradient-1 p-[0.5px]'>
-          <div className='bg-white w-full h-full flex flex-col justify-center items-center'>
-            <h1 className='text-[5rem] leading-none font-black'>{totalComponents}</h1>
+          <div className='bg-white w-full h-full flex flex-col justify-center items-center p-4'>
+            <h1 className='md:text-[5rem] text-[3rem] leading-none font-black'>{totalComponents}</h1>
             <span>Total Components</span>
           </div>
         </div>
-
         <div className='col-span-1 row-span-1 bg-border-gradient-2 p-[0.5px]'>
-          <div className='bg-white w-full h-full flex flex-col justify-center items-center'>
-            <h1 className='text-[5rem] leading-none font-black'>{totalTemplates}</h1>
+          <div className='bg-white w-full h-full flex flex-col justify-center items-center p-4'>
+            <h1 className='md:text-[5rem] text-[3rem] leading-none font-black'>{totalTemplates}</h1>
             <span>Page Templates</span>
           </div>
         </div>
-        <div className='col-span-2 row-span-1 bg-border-gradient-3 p-[0.5px]'>
+        <div className='col-span-2 row-span-1 bg-border-gradient-3 p-[0.5px] pt-4'>
           <div className='bg-white flex flex-col gap-4 justify-center items-center w-full h-full'>
-            <h1 className='md:text-[2.5rem] text-[2rem] leading-none font-black'>All are Freemium</h1>
+            <h1 className='md:text-[2.5rem] text-[1.5rem] leading-none font-black'>All are Freemium</h1>
             <div className='gap-3 flex'>
               <RiTailwindCssFill className='text-zinc-300 h-10 w-auto' />
               <FaHtml5 className='text-zinc-300 h-10 w-auto' />

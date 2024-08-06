@@ -14,7 +14,7 @@ const Home = () => {
       <div className='pt-[4.5rem] px-[0.8rem]'>
         <div className='bg-white border border-neutral-300/40 py-12 rounded-[1rem] flex flex-col'>
           {/* Rendered Hero */}
-          <div className='lg:px-24 md:px-12'>
+          <div className='lg:px-24 md:px-12 px-4'>
             <Hero />
           </div>
           {/* Interface Overview */}
