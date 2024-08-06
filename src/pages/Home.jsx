@@ -1,8 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Navbar, Hero, SampleCard, SampleCart, SampleChat, SampleFooter, SampleLogin, SampleModal, Footer } from '../components';
+import useScrollToTop from '../hooks/useScrollToTop';
+import { Navbar, Hero, SampleCard, SampleCart, SampleChat, SampleLogin, SampleModal, Footer } from '../components';
 
 const Home = () => {
+  useScrollToTop();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}

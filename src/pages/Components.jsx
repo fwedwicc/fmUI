@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import useScrollRestoration from '../hooks/useScrollRestoration';
 import { Navbar, Card, Footer } from '../components';
 import { elementsData, templatesData } from '../constants';
 
 const Components = () => {
+  useScrollRestoration();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}

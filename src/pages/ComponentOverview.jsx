@@ -2,9 +2,11 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Tab, Navbar, Footer } from '../components';
 import { elementsData, templatesData } from '../constants';
+import useScrollToTop from '../hooks/useScrollToTop';
 import { motion } from 'framer-motion';
 
 const ComponentOverview = () => {
+  useScrollToTop();
   const { type } = useParams();
 
   const elementData = elementsData[type];
