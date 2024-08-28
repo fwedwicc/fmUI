@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import useScrollToTop from '../hooks/useScrollToTop';
-import { Navbar, Hero, SampleCard, SampleCart, SampleChat, SampleLogin, SampleModal, Footer } from '../components';
+import { Navbar, Hero, SampleCard, SampleCart, SampleChat, SampleLogin, SampleModal, FAQs, Footer } from '../components';
 
 const Home = () => {
   useScrollToTop();
@@ -41,6 +41,10 @@ const Home = () => {
             <div className='lg:block md:hidden block col-span-1 border-b lg:border-b-0 md:pt-0 pt-2.5 md:pl-2.5 pb-2.5 self-start'>
               <SampleChat />
             </div>
+          </div>
+          {/* FAQs */}
+          <div className='lg:px-24 md:px-12 px-4 pt-24'>
+            <FAQs />
           </div>
         </div>
         <Footer />

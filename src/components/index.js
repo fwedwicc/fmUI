@@ -8,6 +8,7 @@ import SampleChat from "./SampleChat";
 import SampleFooter from "./SampleFooter";
 import SampleLogin from "./SampleLogin";
 import SampleModal from "./SampleModal";
+import FAQs from "./FAQs";
 import Footer from "./Footer";
 
 
@@ -22,5 +23,6 @@ export {
   SampleFooter,
   SampleLogin,
   SampleModal,
+  FAQs,
   Footer,
 }
