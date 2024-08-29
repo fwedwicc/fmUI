@@ -7,6 +7,7 @@ import {
   buttonThumbnail,
   checkboxThumbnail,
   inputFieldThumbnail,
+  navbarThumbnail,
   radioThumbnail,
   tabsThumbnail,
   toggleThumbnail
@@ -246,7 +247,7 @@ export const elementsData = {
   },
   // navbar Component Data
   navbar: {
-    cardImage: '',
+    cardImage: navbarThumbnail,
     ImageAlt: "Navbar Illustration",
     cardTitle: "Navbar",
     cardDescription: "Navigation bars providing a straightforward way for users to navigate your application.",

@@ -46,31 +46,48 @@ const FAQs = () => {
 
   const faqsData = [
     {
-      title: 'Wachu gana du wedu bip bap bo? wigi wigi wigi',
+      title: 'What is fmUI and how can it help me?',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis explicabo consequatur soluta, totam beatae consectetur voluptatum dolor vel quasi, quod velit.',
+        'fmUI is a robust collection of free Tailwind CSS components and templates designed to streamline your development process. Whether you’re building websites, web apps, or any digital project, fmUI offers a diverse range of components and sample pages to help you create with ease and flexibility.',
     },
     {
-      title: 'Wachu gana du wedu bip bap bo? wigi wigi wigi',
+      title: 'Why should I choose fmUI for my projects?',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis explicabo consequatur soluta, totam beatae consectetur voluptatum dolor vel quasi, quod velit.',
+        'fmUI stands out by offering a comprehensive set of easily customizable components that enhance productivity and elevate your design quality. By integrating fmUI into your workflow, you can accelerate your project development while maintaining a high standard of design and functionality.',
     },
     {
-      title: 'Wachu gana du wedu bip bap bo? wigi wigi wigi',
+      title: 'Is fmUI available for free use?',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis explicabo consequatur soluta, totam beatae consectetur voluptatum dolor vel quasi, quod velit.',
+        "Absolutely! fmUI is completely free to use in both personal and commercial projects. We believe in providing valuable resources without any barriers, so you can focus on bringing your ideas to life without worrying about costs.",
     },
     {
-      title: 'Wachu gana du wedu bip bap bo? wigi wigi wigi',
+      title: 'How can I start using fmUI in my projects?',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis explicabo consequatur soluta, totam beatae consectetur voluptatum dolor vel quasi, quod velit.',
+        'Getting started with fmUI is simple. Visit our website, explore the wide range of components available, and copy the code snippets directly into your project. Each component is designed to be intuitive and easy to integrate, so you can focus on building without any hassle.',
     },
     {
-      title: 'Wachu gana du wedu bip bap bo? wigi wigi wigi',
+      title: 'Am I required to credit fmUI in my projects?',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis explicabo consequatur soluta, totam beatae consectetur voluptatum dolor vel quasi, quod velit.',
+        'While there is no obligation to credit fmUI in your projects, we truly appreciate any recognition you can provide. If you find fmUI helpful, consider starring our project on GitHub or sharing it with your community to help us reach more developers like you.',
+    },
+    {
+      title: 'How can I show support for the fmUI project?',
+      content:
+        "Supporting fmUI is easy! You can star our project on GitHub, share it with your network, or simply spread the word among your peers. Your support helps us continue to develop and maintain fmUI, ensuring it remains a valuable resource for developers everywhere.",
+    },
+    {
+      title: 'Can I customize fmUI components to fit my project’s needs?',
+      content:
+        'Yes, fmUI components are designed to be fully customizable. You can easily tweak the styling and functionality to align with your specific project requirements. This flexibility ensures that you can maintain your unique design aesthetic while benefiting from our ready-to-use components.',
+    },
+    {
+      title: 'What makes fmUI different from other UI libraries?',
+      content:
+        'fmUI is crafted with a focus on simplicity, flexibility, and ease of use. Unlike other UI libraries that can be complex and overwhelming, fmUI offers a user-friendly experience with components that are quick to implement and adapt. Our goal is to help you build beautiful, functional projects with minimal effort.',
     },
   ];
+
+
 
   return (
     <section className='flex flex-col md:gap-12 gap-10 justify-center items-center px-6'>

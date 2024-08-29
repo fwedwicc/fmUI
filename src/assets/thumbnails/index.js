@@ -5,6 +5,7 @@ import breadcrumbsThumbnail from './breadcrumbs-thumbnail.png'
 import buttonThumbnail from './button-thumbnail.png'
 import checkboxThumbnail from './checkbox-thumbnail.png'
 import inputFieldThumbnail from './input-field-thumbnail.png'
+import navbarThumbnail from './navbar-thumbnail.png'
 import radioThumbnail from './radio-thumbnail.png'
 import tabsThumbnail from './tabs-thumbnail.png'
 import toggleThumbnail from './toggle-thumbnail.png'
@@ -17,6 +18,7 @@ export {
   buttonThumbnail,
   checkboxThumbnail,
   inputFieldThumbnail,
+  navbarThumbnail,
   radioThumbnail,
   tabsThumbnail,
   toggleThumbnail
