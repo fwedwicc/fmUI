@@ -2,9 +2,10 @@
 
 fmUI is an extensive collection of free Tailwind CSS components and templates created specifically for your forthcoming project. With a diverse set of components and sample pages, you are able to develop websites, web apps, and much more. Explore our selection to improve your development process with simplicity and flexibility.
 
-Image Overview - Under construction
+<img src="https://github.com/fwedwicc/README-assets/blob/main/banners/fmUI-banner.png" width='100%' alt="fmUI Overview"  />
 
 ## Table of Contents
+
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Features](#features)
@@ -24,6 +25,7 @@ To use fmUI, simply browse through our extensive collection of components and te
 ## Features
 
 fmUI offers a variety of features to streamline your development process:
+
 - Extensive Component Library: A wide range of pre-designed components, from buttons to complex navigation bars, ready to use in your projects.
 - Responsive Design: Components are built with responsiveness in mind, ensuring they look great on any device.
 - Customization: Easily customize components with Tailwind CSS classes to match your project's style and branding.

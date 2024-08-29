@@ -11,7 +11,7 @@ const SampleCart = () => {
       options={{ max: 15, scale: 1.02, speed: 400 }}
       style={{ height: '100%', width: '100%' }}
     >
-      <div className='rounded-md border w-full h-full border-neutral-400/30 shadow-xl flex flex-col justify-between p-7'>
+      <div className='rounded-md border w-full h-full border-neutral-400/30 shadow-xl flex flex-col gap-8 justify-between p-7'>
         <div className='flex justify-between items-center'>
           <div className='flex gap-3'>
             <HiShoppingBag className='w-5 h-auto' />

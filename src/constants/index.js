@@ -320,5 +320,18 @@ export const templatesData = {
       { component: AuthPage03, codeSnippet: authPage03CodeSnippet, label: 'Sign-in form with left illustration' },
       { component: AuthPage04, codeSnippet: authPage04CodeSnippet, label: 'Sign-up form with right illustration' },
     ]
+  },
+  // Authentication Pages Data
+  authPage2: {
+    cardTitle: "Auth Pages",
+    cardDescription: "Authentication Pages facilitate user login and registration processes.",
+    title: 'Authentication Pages',
+    description: 'Leverage these fmUI Authentication Pages to create seamless and secure user login and registration experiences, ensuring efficient access control and a smooth onboarding process within your interface.',
+    tabs: [
+      { component: AuthPage01, codeSnippet: authPage01CodeSnippet, label: 'Sign-in form card' },
+      { component: AuthPage02, codeSnippet: authPage02CodeSnippet, label: 'Sign-up form card' },
+      { component: AuthPage03, codeSnippet: authPage03CodeSnippet, label: 'Sign-in form with left illustration' },
+      { component: AuthPage04, codeSnippet: authPage04CodeSnippet, label: 'Sign-up form with right illustration' },
+    ]
   }
 }
